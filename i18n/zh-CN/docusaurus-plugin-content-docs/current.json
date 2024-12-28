@@ -1,0 +1,30 @@
+{
+  "sidebar.wiki.category.区块链基础知识": {
+    "description": "The label for category 区块链基础知识 in sidebar wiki",
+    "message": "区块链基础知识"
+  },
+  "sidebar.wiki.category.如何购买 $Li": {
+    "description": "The label for category 如何购买 $Li in sidebar wiki",
+    "message": "如何购买 $Li"
+  },
+  "sidebar.wiki.category.新闻自由": {
+    "description": "The label for category 新闻自由 in sidebar wiki",
+    "message": "新闻自由"
+  },
+  "sidebar.wiki.category.虚拟货币 $Li": {
+    "description": "The label for category 虚拟货币 $Li in sidebar wiki",
+    "message": "虚拟货币 $Li"
+  },
+  "sidebar.wiki.category.雪花基金会": {
+    "description": "The label for category 雪花基金会 in sidebar wiki",
+    "message": "雪花基金会"
+  },
+  "sidebar.wiki.category.风险提示": {
+    "description": "The label for category 风险提示 in sidebar wiki",
+    "message": "风险提示"
+  },
+  "version.label": {
+    "description": "The label for version current",
+    "message": "Next"
+  }
+}

@@ -156,9 +156,10 @@ const config: Config = {
       {
         path: 'wiki/',
         sidebarPath: 'src/sidebars.ts',
-        sidebarCollapsed: true,
-        sidebarCollapsible: false,
+        sidebarCollapsed: false,
+        sidebarCollapsible: true,
         include: ['**/*.{md,mdx}'],
+        exclude: ['template.md'],
         routeBasePath: '/',
         editUrl: 'https://github.com/li-dao/lidao-wiki',
         editCurrentVersion: false,
