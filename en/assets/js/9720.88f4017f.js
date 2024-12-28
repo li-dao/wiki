@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkli_dao_wiki=self.webpackChunkli_dao_wiki||[]).push([[9720],{9720:(e,i,c)=>{c.d(i,{createArchitectureServices:()=>a.S});var a=c(9936);c(9369)}}]);
