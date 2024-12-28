@@ -1,4 +1,5 @@
 changefreq
+github
 hideable
 lastmod
 lidao
