@@ -1,0 +1,7 @@
+changefreq
+hideable
+lastmod
+lidao
+strikethrough
+tokenomics
+webp

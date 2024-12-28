@@ -1,0 +1,9 @@
+* text eol=lf
+*.jpeg binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.webp binary
+bun.lockb filter=lfs diff=lfs merge=lfs -text

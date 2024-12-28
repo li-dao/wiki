@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "caseSensitive": true,
+  "dictionaries": ["workspace", "ignore words", "en_US", "!typescript", "!node"],
+  "dictionaryDefinitions": [
+    {
+      "addWords": true,
+      "description": "Custom Workspace Dictionary",
+      "name": "workspace",
+      "path": ".cspell-dict.txt"
+    },
+    {
+      "addWords": true,
+      "description": "Words to be ignored",
+      "name": "ignore words",
+      "noSuggest": true,
+      "path": ".cspell-ignore.txt"
+    }
+  ],
+  "ignorePaths": [
+    // Cspell Condfiguration
+    ".cspell.json",
+    // Pre-commit Configuration
+    ".pre-commit-config.yaml",
+    // Git Configuration
+    ".gitignore",
+    // Node Condfiguration
+    "node_modules",
+    "package.json",
+    "bun.lockb",
+    "tsconfig.json"
+  ],
+  "overrides": [
+    {
+      "description": "JavaScript and TypeScript files",
+      "dictionaries": ["!!typescript", "!!node"],
+      "filename": "**/*.{js,jsx,ts,tsx}",
+      "name": "JS/TS"
+    }
+  ],
+  "readonly": true,
+  "useGitignore": true
+}

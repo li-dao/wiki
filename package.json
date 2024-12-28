@@ -1,0 +1,89 @@
+{
+  "author": {
+    "email": "dev.team@lidao.pro",
+    "name": "$li developer and contributor",
+    "url": "https://github.com/li-dao"
+  },
+  "browserslist": {
+    "development": ["last 3 chrome version", "last 3 firefox version", "last 5 safari version"],
+    "production": [">0.5%", "not dead", "not op_mini all"]
+  },
+  "bugs": {
+    "email": "dev.team@lidao.pro",
+    "url": "https://github.com/li-dao/lidao-wiki/issues"
+  },
+  "categories": ["wiki", "web"],
+  "contributors": [],
+  "dependencies": {
+    "@docusaurus/core": "3.6.3",
+    "@docusaurus/plugin-content-docs": "^3.6.3",
+    "@docusaurus/plugin-debug": "^3.6.3",
+    "@docusaurus/plugin-google-gtag": "^3.6.3",
+    "@docusaurus/plugin-google-tag-manager": "^3.6.3",
+    "@docusaurus/plugin-ideal-image": "^3.6.3",
+    "@docusaurus/plugin-sitemap": "^3.6.3",
+    "@docusaurus/plugin-vercel-analytics": "^3.6.3",
+    "@docusaurus/theme-classic": "^3.6.3",
+    "@docusaurus/theme-live-codeblock": "^3.6.3",
+    "@docusaurus/theme-mermaid": "^3.6.3",
+    "@docusaurus/theme-search-algolia": "^3.6.3",
+    "@easyops-cn/docusaurus-search-local": "^0.46.1",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "lunr-languages": "^1.14.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "description": "The wiki of $Li and snowflake foundation",
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.6.3",
+    "@docusaurus/tsconfig": "3.6.3",
+    "@docusaurus/types": "3.6.3",
+    "typescript": "~5.6.2"
+  },
+  "files": [
+    "wiki",
+    "src/**/*",
+    "static/**/*",
+    ".gitignore",
+    "docusaurus.config.js",
+    "sidebars.js",
+    "tsconfig.json",
+    "package.json",
+    "README.md"
+  ],
+  "homepage": "wip",
+  "icon": "./static/img/icon.jpeg",
+  "keywords": ["wiki", "lidao", "teacher Li", "China", "freedom", "snowflake"],
+  "license": "CC-BY-NC-SA-4.0",
+  "maintainers": [
+    {
+      "email": "really.need.anonymous@proton.me",
+      "name": "rrrro",
+      "url": "https://github.com/really-need-anonymous"
+    }
+  ],
+  "markdown": "github",
+  "name": "li-dao-wiki",
+  "packageManager": "bun@1.1.42",
+  "private": true,
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/li-dao/lidao-wiki.git"
+  },
+  "scripts": {
+    "build": "docusaurus build",
+    "clear": "docusaurus clear",
+    "deploy": "docusaurus deploy",
+    "docusaurus": "docusaurus",
+    "serve": "docusaurus serve",
+    "start": "docusaurus start",
+    "swizzle": "docusaurus swizzle",
+    "typecheck": "tsc",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "write-translations": "docusaurus write-translations"
+  },
+  "version": "0.0.1-alpha.1+dev1"
+}

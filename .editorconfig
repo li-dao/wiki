@@ -1,0 +1,31 @@
+# https://editorconfig.org/
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+tab_width = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+root = true
+
+# Web
+[*.{js,jsx,ts,tsx}]
+indent_size = 2
+
+[*.{html,htm}]
+indent_size = 2
+
+[*.{css,scss,sass,less}]
+indent_size = 2
+
+# Markdown
+[*.{md,markdown}]
+indent_size = 2
+
+# Config files
+[*.{json,json5,jsonc,yml,yaml}]
+indent_size = 2

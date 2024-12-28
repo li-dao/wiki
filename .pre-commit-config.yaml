@@ -1,0 +1,92 @@
+default_stages:
+  - pre-commit
+  - pre-push
+  - manual
+fail_fast: true
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-illegal-windows-names
+      - id: check-json
+        exclude: ".cspell.json|tsconfig.json" # we use commented json here
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-vcs-permalinks
+      - id: check-xml
+      - id: check-yaml
+      - id: destroyed-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: file-contents-sorter
+        files: ".cspell-*.txt"
+      - id: fix-byte-order-marker
+      - id: forbid-new-submodules
+      # - id: no-commit-to-branch
+      #   args:
+      #     - --branch
+      #     - main
+      - id: trailing-whitespace
+
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v8.17.0
+    hooks:
+      - id: cspell
+
+  - repo: https://github.com/biomejs/pre-commit
+    rev: v0.6.1
+    hooks:
+      - id: biome-format
+        name: Biome Format (JavaScript/TypeScript)
+        additional_dependencies: ["@biomejs/biome@1.9.4"]
+        args:
+          - "--error-on-warnings"
+      - id: biome-lint
+        name: Biome Lint (JavaScript/TypeScript)
+        additional_dependencies: ["@biomejs/biome@1.9.4"]
+        args:
+          - "--unsafe"
+          - "--error-on-warnings"
+      - id: biome-check
+        name: Biome Check (JavaScript/TypeScript)
+        additional_dependencies: ["@biomejs/biome@1.9.4"]
+        args:
+          - "--unsafe"
+          - "--error-on-warnings"
+      - id: biome-ci
+        name: Biome CI (JavaScript/TypeScript)
+        additional_dependencies: ["@biomejs/biome@1.9.4"]
+        args:
+          - "--error-on-warnings"
+
+  - repo: local
+    hooks:
+      - id: tsc
+        name: Type Script Check (JavaScript/TypeScript)
+        entry: bun run tsc --noEmit
+        language: system
+        always_run: true
+        pass_filenames: false
+
+    # It's too strict for contributors without coding knowledge, that's why we disable it
+  # - repo: https://github.com/markdownlint/markdownlint
+  #   rev: v0.13.0
+  #   hooks:
+  #     - id: markdownlint
+  #       name: Markdown Lint (Markdown)
+
+ci:
+  skip:
+    - tsc
+  autofix_commit_msg: "ci(pre-commit): auto fixes from pre-commit.com hooks"
+  autofix_prs: true
+  autoupdate_branch: "pre-commit-autoupdate"
+  autoupdate_commit_msg: "ci(pre-commit): pre-commit autoupdate"
+  autoupdate_schedule: weekly
+  submodules: false
