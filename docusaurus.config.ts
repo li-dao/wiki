@@ -59,7 +59,7 @@ const config: Config = {
         docsRouteBasePath: '/',
         language: ['zh', 'en'],
         hashed: 'query',
-        docsDir: 'docs',
+        docsDir: 'wiki',
         highlightSearchTermsOnTargetPage: true,
         searchResultLimits: 10,
         searchResultContextMaxLength: 50,

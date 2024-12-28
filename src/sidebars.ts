@@ -3,6 +3,11 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
 const sidebars: SidebarsConfig = {
   wiki: [
     {
+      type: 'doc',
+      id: 'index',
+      label: '首页',
+    },
+    {
       type: 'category',
       label: '雪花基金会',
       collapsible: true,
