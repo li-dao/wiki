@@ -10,8 +10,8 @@ const config: Config = {
   favicon: 'img/icon.jpeg',
   tagline: 'The wiki of $Li and snowflake foundation',
 
-  url: 'https://your-docusaurus-site.example.com', // TODO: need set to real url
-  baseUrl: '/', // TODO: need set to real url
+  url: 'https://li-dao.github.io', // TODO: need set to real url
+  baseUrl: '/wiki/', // TODO: need set to real url
 
   // Help to simplify url
   trailingSlash: false,
