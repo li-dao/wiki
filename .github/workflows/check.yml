@@ -1,5 +1,3 @@
-# The propose of this workflow is to check the code before merge to main branch
-
 name: check code style and buildable
 
 on:
@@ -7,6 +5,8 @@ on:
     branches:
       - main
   pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
