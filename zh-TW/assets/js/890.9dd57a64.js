@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklidao_wiki=self.webpackChunklidao_wiki||[]).push([[890],{890:(e,i,a)=>{a.d(i,{createInfoServices:()=>k.v});var k=a(7021);a(9369)}}]);
