@@ -1,22 +1,22 @@
 {
   "item.label.Github": {
-    "description": "Navbar item with label Github",
+    "description": "导航栏项，标签为Github",
     "message": "Github"
   },
   "item.label.Official Website": {
-    "description": "Navbar item with label Official Website",
-    "message": "Official Website"
+    "description": "导航栏项，标签为官方网站",
+    "message": "官方网站"
   },
   "item.label.X": {
-    "description": "Navbar item with label X",
+    "description": "导航栏项，标签为X",
     "message": "X"
   },
   "logo.alt": {
-    "description": "The alt text of navbar logo",
-    "message": "$Li: The most dangerous cat"
+    "description": "导航栏徽标的替代文本",
+    "message": "$Li: 最危险的猫"
   },
   "title": {
-    "description": "The title in the navbar",
-    "message": "Wiki | $Li | 雪花基金会"
+    "description": "导航栏中的标题",
+    "message": "$Li | 雪花基金会 | Wiki"
   }
 }

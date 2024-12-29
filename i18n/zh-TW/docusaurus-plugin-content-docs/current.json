@@ -1,30 +1,66 @@
 {
-  "sidebar.wiki.category.区块链基础知识": {
-    "description": "The label for category 区块链基础知识 in sidebar wiki",
-    "message": "區塊鏈基礎知識"
+  "sidebar.wiki.category.⚖️ 9. Legal & Policy": {
+    "description": "側邊欄wiki中的類別 ⚖️ 9. 法律與政策的標籤",
+    "message": "⚖️ 9. 法律與政策"
   },
-  "sidebar.wiki.category.如何购买 $Li": {
-    "description": "The label for category 如何购买 $Li in sidebar wiki",
-    "message": "如何購買 $Li"
+  "sidebar.wiki.category.⚡ 4.3. Solana": {
+    "description": "側邊欄wiki中的類別 ⚡ 4.3. Solana的標籤",
+    "message": "⚡ 4.3. Solana"
   },
-  "sidebar.wiki.category.新闻自由": {
-    "description": "The label for category 新闻自由 in sidebar wiki",
-    "message": "新聞自由"
+  "sidebar.wiki.category.❓ 8. Support & FAQ": {
+    "description": "側邊欄wiki中的類別 ❓ 8. 支援與常見問題的標籤",
+    "message": "❓ 8. 支援與常見問題"
   },
-  "sidebar.wiki.category.虚拟货币 $Li": {
-    "description": "The label for category 虚拟货币 $Li in sidebar wiki",
-    "message": "虛擬貨幣 $Li"
+  "sidebar.wiki.category.👥 6. Community": {
+    "description": "側邊欄wiki中的類別 👥 6. 社區的標籤",
+    "message": "👥 6. 社區"
   },
-  "sidebar.wiki.category.雪花基金会": {
-    "description": "The label for category 雪花基金会 in sidebar wiki",
-    "message": "雪花基金會"
+  "sidebar.wiki.category.💎 5.2. Tokenomics": {
+    "description": "側邊欄wiki中的類別 💎 5.2. 通證經濟學的標籤",
+    "message": "💎 5.2. 通證經濟學"
   },
-  "sidebar.wiki.category.风险提示": {
-    "description": "The label for category 风险提示 in sidebar wiki",
-    "message": "風險提示"
+  "sidebar.wiki.category.💡 4.1. Understanding Blockchain": {
+    "description": "側邊欄wiki中的類別 💡 4.1. 理解區塊鏈的標籤",
+    "message": "💡 4.1. 理解區塊鏈"
+  },
+  "sidebar.wiki.category.🔄 5.1. Advanced Concepts": {
+    "description": "側邊欄wiki中的類別 🔄 5.1. 高級概念的標籤",
+    "message": "🔄 5.1. 高級概念"
+  },
+  "sidebar.wiki.category.🔗 1. Introduction": {
+    "description": "側邊欄wiki中的類別 🔗 1. 介紹的標籤",
+    "message": "🔗 1. 介紹"
+  },
+  "sidebar.wiki.category.🔗 2. Free Speech": {
+    "description": "側邊欄wiki中的類別 🔗 2. 言論自由的標籤",
+    "message": "🔗 2. 言論自由"
+  },
+  "sidebar.wiki.category.🔰 4. Blockchain Basics": {
+    "description": "側邊欄wiki中的類別 🔰 4. 區塊鏈基礎的標籤",
+    "message": "🔰 4. 區塊鏈基礎"
+  },
+  "sidebar.wiki.category.🔰 5. Advanced Blockchain": {
+    "description": "側邊欄wiki中的類別 🔰 5. 區塊鏈進階的標籤",
+    "message": "🔰 5. 區塊鏈進階"
+  },
+  "sidebar.wiki.category.🚀 3. Getting Started": {
+    "description": "側邊欄wiki中的類別 🚀 3. 入門的標籤",
+    "message": "🚀 3. 入門"
+  },
+  "sidebar.wiki.category.🛡️ 7. Safety": {
+    "description": "側邊欄wiki中的類別 🛡️ 7. 安全的標籤",
+    "message": "🛡️ 7. 安全"
+  },
+  "sidebar.wiki.category.🪙 4.2. Memecoins": {
+    "description": "側邊欄wiki中的類別 🪙 4.2. memecoins的標籤",
+    "message": "🪙 4.2. memecoins"
+  },
+  "sidebar.wiki.doc.Risk Disclaimer": {
+    "description": "側邊欄wiki中的文檔項目風險聲明的標籤，鏈接到風險聲明文檔",
+    "message": "風險聲明"
   },
   "version.label": {
-    "description": "The label for version current",
-    "message": "Next"
+    "description": "當前版本的標籤",
+    "message": "下一步"
   }
 }

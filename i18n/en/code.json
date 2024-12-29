@@ -367,7 +367,7 @@
   },
   "theme.tags.tagsPageLink": {
     "description": "The label of the link targeting the tag list page",
-    "message": "View All Tags"
+    "message": "View all tags"
   },
   "theme.tags.tagsPageTitle": {
     "description": "The title of the tag list page",

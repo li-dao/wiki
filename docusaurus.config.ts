@@ -12,11 +12,8 @@ const config: Config = {
   favicon: ICON_PATH,
   tagline: 'The wiki of $Li and snowflake foundation',
 
-  url: 'https://li-dao.github.io',
-  baseUrl: '/wiki/',
-  // TODO: this code should be commented out when the wiki is official released
-  // url: 'https://li-dao.wiki',
-  // baseUrl: '/',
+  url: 'https://www.li-dao.wiki',
+  baseUrl: '/',
 
   // Help to simplify url
   trailingSlash: false,
@@ -182,7 +179,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © 2024 - ${new Date().getFullYear()} $Li developer and contributor. Under CC-BY-NC-SA 4.0`,
+      copyright: `Copyright © 2024 - ${new Date().getFullYear()} Developer and contributor of $Li all rights reserved. Under CC-BY-NC-SA 4.0`,
       // links: [],
     },
     prism: {
@@ -197,7 +194,7 @@ const config: Config = {
       {
         path: 'wiki/',
         sidebarPath: 'src/sidebars.ts',
-        sidebarCollapsed: false,
+        sidebarCollapsed: true,
         sidebarCollapsible: true,
         include: ['**/*.{md,mdx}'],
         exclude: ['template.md'],

@@ -17,6 +17,6 @@
   },
   "title": {
     "description": "The title in the navbar",
-    "message": "Wiki | $Li | Snowflake Foundation"
+    "message": "$Li | Snowflake Foundation | Wiki"
   }
 }
