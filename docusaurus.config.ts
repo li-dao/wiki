@@ -12,11 +12,8 @@ const config: Config = {
   favicon: ICON_PATH,
   tagline: 'The wiki of $Li and snowflake foundation',
 
-  url: 'https://li-dao.github.io',
-  baseUrl: '/wiki/',
-  // TODO: this code should be commented out when the wiki is official released
-  // url: 'https://li-dao.wiki',
-  // baseUrl: '/',
+  url: 'https://www.li-dao.wiki',
+  baseUrl: '/',
 
   // Help to simplify url
   trailingSlash: false,
