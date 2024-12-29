@@ -182,7 +182,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © 2024 - ${new Date().getFullYear()} $Li developer and contributor. Under CC-BY-NC-SA 4.0`,
+      copyright: `Copyright © 2024 - ${new Date().getFullYear()} Developer and contributor of $Li all rights reserved. Under CC-BY-NC-SA 4.0`,
       // links: [],
     },
     prism: {

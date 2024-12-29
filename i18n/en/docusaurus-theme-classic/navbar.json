@@ -1,0 +1,22 @@
+{
+  "item.label.Github": {
+    "description": "Navbar item with label Github",
+    "message": "Github"
+  },
+  "item.label.Official Website": {
+    "description": "Navbar item with label Official Website",
+    "message": "Official Website"
+  },
+  "item.label.X": {
+    "description": "Navbar item with label X",
+    "message": "X"
+  },
+  "logo.alt": {
+    "description": "The alt text of navbar logo",
+    "message": "$Li: The most dangerous cat"
+  },
+  "title": {
+    "description": "The title in the navbar",
+    "message": "$Li | Snowflake Foundation | Wiki"
+  }
+}

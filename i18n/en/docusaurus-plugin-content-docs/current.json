@@ -1,0 +1,66 @@
+{
+  "sidebar.wiki.category.⚖️ 9. Legal & Policy": {
+    "description": "The label for category ⚖️ 9. Legal & Policy in sidebar wiki",
+    "message": "⚖️ 9. Legal & Policy"
+  },
+  "sidebar.wiki.category.⚡ 4.3. Solana": {
+    "description": "The label for category ⚡ 4.3. Solana in sidebar wiki",
+    "message": "⚡ 4.3. Solana"
+  },
+  "sidebar.wiki.category.❓ 8. Support & FAQ": {
+    "description": "The label for category ❓ 8. Support & FAQ in sidebar wiki",
+    "message": "❓ 8. Support & FAQ"
+  },
+  "sidebar.wiki.category.👥 6. Community": {
+    "description": "The label for category 👥 6. Community in sidebar wiki",
+    "message": "👥 6. Community"
+  },
+  "sidebar.wiki.category.💎 5.2. Tokenomics": {
+    "description": "The label for category 💎 5.2. Tokenomics in sidebar wiki",
+    "message": "💎 5.2. Tokenomics"
+  },
+  "sidebar.wiki.category.💡 4.1. Understanding Blockchain": {
+    "description": "The label for category 💡 4.1. Understanding Blockchain in sidebar wiki",
+    "message": "💡 4.1. Understanding Blockchain"
+  },
+  "sidebar.wiki.category.🔄 5.1. Advanced Concepts": {
+    "description": "The label for category 🔄 5.1. Advanced Concepts in sidebar wiki",
+    "message": "🔄 5.1. Advanced Concepts"
+  },
+  "sidebar.wiki.category.🔗 1. Introduction": {
+    "description": "The label for category 🔗 1. Introduction in sidebar wiki",
+    "message": "🔗 1. Introduction"
+  },
+  "sidebar.wiki.category.🔗 2. Free Speech": {
+    "description": "The label for category 🔗 2. Free Speech in sidebar wiki",
+    "message": "🔗 2. Free Speech"
+  },
+  "sidebar.wiki.category.🔰 4. Blockchain Basics": {
+    "description": "The label for category 🔰 4. Blockchain Basics in sidebar wiki",
+    "message": "🔰 4. Blockchain Basics"
+  },
+  "sidebar.wiki.category.🔰 5. Advanced Blockchain": {
+    "description": "The label for category 🔰 5. Advanced Blockchain in sidebar wiki",
+    "message": "🔰 5. Advanced Blockchain"
+  },
+  "sidebar.wiki.category.🚀 3. Getting Started": {
+    "description": "The label for category 🚀 3. Getting Started in sidebar wiki",
+    "message": "🚀 3. Getting Started"
+  },
+  "sidebar.wiki.category.🛡️ 7. Safety": {
+    "description": "The label for category 🛡️ 7. Safety in sidebar wiki",
+    "message": "🛡️ 7. Safety"
+  },
+  "sidebar.wiki.category.🪙 4.2. Memecoins": {
+    "description": "The label for category 🪙 4.2. Memecoins in sidebar wiki",
+    "message": "🪙 4.2. Memecoins"
+  },
+  "sidebar.wiki.doc.Risk Disclaimer": {
+    "description": "The label for the doc item Risk Disclaimer in sidebar wiki, linking to the doc risk-disclaimer",
+    "message": "Risk Disclaimer"
+  },
+  "version.label": {
+    "description": "The label for version current",
+    "message": "Next"
+  }
+}
