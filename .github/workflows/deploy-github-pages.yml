@@ -36,6 +36,10 @@ jobs:
           GOOGLE_TAG_MANAGER_ID: ${{ secrets.GOOGLE_TAG_MANAGER_ID }}
         run: bun run build
 
+      - name: Write CNAME
+        run: |
+          echo "www.lidao.wiki" > ./build/CNAME
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
