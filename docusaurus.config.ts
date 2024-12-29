@@ -197,7 +197,7 @@ const config: Config = {
       {
         path: 'wiki/',
         sidebarPath: 'src/sidebars.ts',
-        sidebarCollapsed: false,
+        sidebarCollapsed: true,
         sidebarCollapsible: true,
         include: ['**/*.{md,mdx}'],
         exclude: ['template.md'],
