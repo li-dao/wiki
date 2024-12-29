@@ -10,10 +10,16 @@
   },
   "bugs": {
     "email": "dev.team@lidao.pro",
-    "url": "https://github.com/li-dao/lidao-wiki/issues"
+    "url": "https://github.com/li-dao/wiki/issues"
   },
   "categories": ["wiki", "web"],
-  "contributors": [],
+  "contributors": [
+    {
+      "email": "really.need.anonymous@proton.me",
+      "name": "rrrro",
+      "url": "https://github.com/really-need-anonymous"
+    }
+  ],
   "dependencies": {
     "@docusaurus/core": "3.6.3",
     "@docusaurus/plugin-content-docs": "^3.6.3",
@@ -43,19 +49,31 @@
     "typescript": "~5.6.2"
   },
   "files": [
-    "wiki",
+    "i18n/**/*",
+    "wiki/**/*",
     "src/**/*",
     "static/**/*",
     ".gitignore",
     "docusaurus.config.js",
-    "sidebars.js",
     "tsconfig.json",
     "package.json",
     "README.md"
   ],
-  "homepage": "wip",
+  "homepage": "will show after official website is ready",
   "icon": "./static/img/icon.jpeg",
-  "keywords": ["wiki", "lidao", "teacher Li", "China", "freedom", "snowflake"],
+  "keywords": [
+    "wiki",
+    "lidao",
+    "teacher Li",
+    "China",
+    "freedom",
+    "snowflake",
+    "$Li",
+    "foundation",
+    "BlockChian",
+    "human rights",
+    "meme coin"
+  ],
   "license": "CC-BY-NC-SA-4.0",
   "maintainers": [
     {
@@ -65,13 +83,13 @@
     }
   ],
   "markdown": "github",
-  "name": "li-dao-wiki",
+  "name": "lidao-wiki",
   "packageManager": "bun@1.1.42",
   "private": true,
   "readme": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/li-dao/lidao-wiki.git"
+    "url": "https://github.com/li-dao/wiki.git"
   },
   "scripts": {
     "build": "docusaurus build",

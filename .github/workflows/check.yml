@@ -26,14 +26,11 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Setup pre-commit
-        uses: pre-commit/action@v3.0.1
-
       - name: Install dependencies
         run: bun install
 
-      - name: Run pre-commit
-        run: pre-commit run --all-files
+      - name: Setup pre-commit and Run pre-commit
+        uses: pre-commit/action@v3.0.1
 
       - name: Test Buildable
         run: bun run build

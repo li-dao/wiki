@@ -8,7 +8,8 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-      - id: check-added-large-files
+      # we comment this hook because use lfs is too strict for some novice contributors
+      # - id: check-added-large-files
       - id: check-case-conflict
       - id: check-executables-have-shebangs
       - id: check-illegal-windows-names
@@ -74,12 +75,12 @@ repos:
         always_run: true
         pass_filenames: false
 
-    # It's too strict for contributors without coding knowledge, that's why we disable it
-  # - repo: https://github.com/markdownlint/markdownlint
-  #   rev: v0.13.0
-  #   hooks:
-  #     - id: markdownlint
-  #       name: Markdown Lint (Markdown)
+    # It's too strict for novice contributors without coding knowledge, that's why we disable it
+    # - repo: https://github.com/markdownlint/markdownlint
+    #   rev: v0.13.0
+    #   hooks:
+    #     - id: markdownlint
+    #       name: Markdown Lint (Markdown)
 
 ci:
   skip:
