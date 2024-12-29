@@ -1,0 +1,66 @@
+{
+  "sidebar.wiki.category.⚖️ 9. Legal & Policy": {
+    "description": "侧边栏wiki中的类别 ⚖️ 9. 法律与政策的标签",
+    "message": "⚖️ 9. 法律与政策"
+  },
+  "sidebar.wiki.category.⚡ 4.3. Solana": {
+    "description": "侧边栏wiki中的类别 ⚡ 4.3. Solana的标签",
+    "message": "⚡ 4.3. Solana"
+  },
+  "sidebar.wiki.category.❓ 8. Support & FAQ": {
+    "description": "侧边栏wiki中的类别 ❓ 8. 支持与常见问题的标签",
+    "message": "❓ 8. 支持与常见问题"
+  },
+  "sidebar.wiki.category.👥 6. Community": {
+    "description": "侧边栏wiki中的类别 👥 6. 社区的标签",
+    "message": "👥 6. 社区"
+  },
+  "sidebar.wiki.category.💎 5.2. Tokenomics": {
+    "description": "侧边栏wiki中的类别 💎 5.2. 代币经济学的标签",
+    "message": "💎 5.2. 代币经济学"
+  },
+  "sidebar.wiki.category.💡 4.1. Understanding Blockchain": {
+    "description": "侧边栏wiki中的类别 💡 4.1. 理解区块链的标签",
+    "message": "💡 4.1. 理解区块链"
+  },
+  "sidebar.wiki.category.🔄 5.1. Advanced Concepts": {
+    "description": "侧边栏wiki中的类别 🔄 5.1. 高级概念的标签",
+    "message": "🔄 5.1. 高级概念"
+  },
+  "sidebar.wiki.category.🔗 1. Introduction": {
+    "description": "侧边栏wiki中的类别 🔗 1. 介绍的标签",
+    "message": "🔗 1. 介绍"
+  },
+  "sidebar.wiki.category.🔗 2. Free Speech": {
+    "description": "侧边栏wiki中的类别 🔗 2. 言论自由的标签",
+    "message": "🔗 2. 言论自由"
+  },
+  "sidebar.wiki.category.🔰 4. Blockchain Basics": {
+    "description": "侧边栏wiki中的类别 🔰 4. 区块链基础的标签",
+    "message": "🔰 4. 区块链基础"
+  },
+  "sidebar.wiki.category.🔰 5. Advanced Blockchain": {
+    "description": "侧边栏wiki中的类别 🔰 5. 区块链进阶的标签",
+    "message": "🔰 5. 区块链进阶"
+  },
+  "sidebar.wiki.category.🚀 3. Getting Started": {
+    "description": "侧边栏wiki中的类别 🚀 3. 入门的标签",
+    "message": "🚀 3. 入门"
+  },
+  "sidebar.wiki.category.🛡️ 7. Safety": {
+    "description": "侧边栏wiki中的类别 🛡️ 7. 安全的标签",
+    "message": "🛡️ 7. 安全"
+  },
+  "sidebar.wiki.category.🪙 4.2. Memecoins": {
+    "description": "侧边栏wiki中的类别 🪙 4.2. memecoins的标签",
+    "message": "🪙 4.2. memecoins"
+  },
+  "sidebar.wiki.doc.Risk Disclaimer": {
+    "description": "侧边栏wiki中的文档项目风险声明的标签，链接到风险声明文档",
+    "message": "风险声明"
+  },
+  "version.label": {
+    "description": "当前版本的标签",
+    "message": "下一步"
+  }
+}

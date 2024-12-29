@@ -1,0 +1,22 @@
+{
+  "item.label.Github": {
+    "description": "导航栏项，标签为Github",
+    "message": "Github"
+  },
+  "item.label.Official Website": {
+    "description": "导航栏项，标签为官方网站",
+    "message": "官方网站"
+  },
+  "item.label.X": {
+    "description": "导航栏项，标签为X",
+    "message": "X"
+  },
+  "logo.alt": {
+    "description": "导航栏徽标的替代文本",
+    "message": "$Li: 最危险的猫"
+  },
+  "title": {
+    "description": "导航栏中的标题",
+    "message": "$Li | 雪花基金会 | Wiki"
+  }
+}

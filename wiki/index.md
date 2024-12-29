@@ -46,10 +46,10 @@ last_update:
 获取可靠信息的渠道和社区讨论。
 
 ## 风险提示
-
+<!--
 - [投资风险警示](/risk/investment)
 - [匿名性保护指南](/risk/anonymity)
-- [规避监控指南](/risk/surveillance)
+- [规避监控指南](/risk/surveillance) -->
 
 :::warning
 重要提示：本维基包含的所有内容仅供参考，不构成投资建议。加密货币投资具有高风险，请谨慎决策。

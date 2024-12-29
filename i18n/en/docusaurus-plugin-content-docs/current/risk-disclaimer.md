@@ -29,6 +29,6 @@ In this page, we will discuss the risks and considerations for $Li token holders
 :::
 
 :::info
-For specific security guidance, please refer to our [Safety Guide](/wiki/category/safety) section.
+For specific security guidance, please refer to our [Safety Guide](/safety/avoiding-scams) section.
 
 :::

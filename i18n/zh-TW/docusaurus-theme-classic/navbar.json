@@ -1,0 +1,22 @@
+{
+  "item.label.Github": {
+    "description": "導覽列項目，標籤為Github",
+    "message": "Github"
+  },
+  "item.label.Official Website": {
+    "description": "導覽列項目，標籤為官方網站",
+    "message": "官方網站"
+  },
+  "item.label.X": {
+    "description": "導覽列項目，標籤為X",
+    "message": "X"
+  },
+  "logo.alt": {
+    "description": "導覽列徽標的替代文字",
+    "message": "$Li: 最危險的貓"
+  },
+  "title": {
+    "description": "導覽列中的標題",
+    "message": "$Li | 雪花基金會 | Wiki"
+  }
+}
