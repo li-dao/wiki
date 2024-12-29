@@ -4,6 +4,8 @@
 
 ## Type of Change
 
+<!-- You can delete the non-relevant options in section `Type of Change` -->
+
 - [ ] Development
 - [ ] Wiki, I'm a contributor for wiki writing
 
