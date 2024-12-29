@@ -1,3 +1,4 @@
+buildable
 changefreq
 github
 hideable
