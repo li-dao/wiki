@@ -2,6 +2,7 @@ buildable
 changefreq
 Dogecoin
 github
+glassmorphism
 hideable
 IPFS
 lastmod

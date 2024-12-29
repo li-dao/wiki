@@ -1,4 +1,5 @@
 import type { PluginOptions as DocPlugOptions } from '@docusaurus/plugin-content-docs'
+import type { PluginOptions as PagesPluginOptions } from '@docusaurus/plugin-content-pages'
 import type { PluginOptions as IdealImagePluginOptions } from '@docusaurus/plugin-ideal-image'
 import type { PluginOptions as SitemapPluginOptions } from '@docusaurus/plugin-sitemap'
 import type { Config } from '@docusaurus/types'
@@ -204,6 +205,14 @@ const config: Config = {
         editLocalizedFiles: true,
         showLastUpdateTime: true,
       } satisfies Partial<DocPlugOptions>,
+    ],
+    [
+      '@docusaurus/plugin-content-pages',
+      {
+        path: 'src/pages',
+        routeBasePath: '/',
+        include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+      } satisfies Partial<PagesPluginOptions>,
     ],
     [
       '@docusaurus/plugin-debug',
