@@ -5,20 +5,25 @@ import type { Config } from '@docusaurus/types'
 import type { PluginOptions as SearchPluginOptions } from '@easyops-cn/docusaurus-search-local'
 import { themes as prismThemes } from 'prism-react-renderer'
 
+const ICON_PATH = 'img/icon.jpeg'
+
 const config: Config = {
   title: '$Li Wiki',
-  favicon: 'img/icon.jpeg',
+  favicon: ICON_PATH,
   tagline: 'The wiki of $Li and snowflake foundation',
 
-  url: 'https://li-dao.github.io', // TODO: need set to real url
-  baseUrl: '/wiki/', // TODO: need set to real url
+  url: 'https://li-dao.github.io',
+  baseUrl: '/wiki/',
+  // TODO: this code should be commented out when the wiki is official released
+  // url: 'https://li-dao.wiki',
+  // baseUrl: '/',
 
   // Help to simplify url
   trailingSlash: false,
 
   // Github Organization and Repo Name
   organizationName: 'li-dao',
-  projectName: 'lidao-wiki',
+  projectName: 'wiki',
   deploymentBranch: 'gh-pages',
 
   // Help search engines to index
@@ -31,7 +36,43 @@ const config: Config = {
   onBrokenMarkdownLinks: 'throw',
 
   // Head tags
-  headTags: [], // TODO: need to set in the future
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: ICON_PATH,
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        href: ICON_PATH,
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'description',
+        content: 'The wiki of $Li and snowflake foundation; 雪花基金会和$Li的维基',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'keywords',
+        content: 'wiki, $Li, snowflake, foundation, block chain, human rights, 维基, 雪花, 基金会, 区块链, 人权',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'author',
+        content: 'Developer and Contributor of $Li',
+      },
+    },
+  ],
 
   // static directories
   staticDirectories: ['static'],
@@ -76,9 +117,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     // social card
-    image: 'img/social-card.jpg',
+    image: 'img/social-card.jpg', // TODO: need to set to real image
 
-    // announcementBar
+    // announcementBar // TODO: need to be commented when the wiki is official released
     announcementBar: {
       id: 'work in progress',
       content: 'This wiki is under construction',
@@ -101,15 +142,15 @@ const config: Config = {
 
     navbar: {
       // title: 'Wiki of $Li',
-      title: 'Wiki | $Li | 雪花基金会',
+      title: '$Li | Snowflake Foundation | Wiki',
       logo: {
         alt: '$Li: The most dangerous cat',
-        src: 'img/icon.jpeg',
+        src: ICON_PATH,
       },
       items: [
         {
           label: 'Official Website',
-          href: 'https://placeholder.com/official-website', // TODO: need to set to real url
+          href: 'https://li-dao.wiki/404', // TODO: need to set to real url
           position: 'left',
         },
         {
@@ -127,7 +168,7 @@ const config: Config = {
           position: 'right',
           dropdownItemsAfter: [
             {
-              to: 'https://placeholder.com/help-translate', // TODO: need to set to real url
+              to: 'https://li-dao.wiki/404', // TODO: need to set to real url
               label: 'Help us translate',
             },
           ],
@@ -140,7 +181,7 @@ const config: Config = {
       hideOnScroll: true,
     },
     footer: {
-      style: 'light',
+      style: 'dark',
       copyright: `Copyright © 2024 - ${new Date().getFullYear()} $Li developer and contributor. Under CC-BY-NC-SA 4.0`,
       // links: [],
     },
@@ -161,7 +202,7 @@ const config: Config = {
         include: ['**/*.{md,mdx}'],
         exclude: ['template.md'],
         routeBasePath: '/',
-        editUrl: 'https://github.com/li-dao/lidao-wiki',
+        editUrl: 'https://github.com/li-dao/wiki',
         editCurrentVersion: false,
         editLocalizedFiles: true,
         showLastUpdateTime: true,
@@ -176,14 +217,14 @@ const config: Config = {
     [
       '@docusaurus/plugin-google-gtag',
       {
-        trackingID: 'todo', // TODO: should set to real id
+        trackingID: process.env.GOOGLE_ANALYTICS_ID ?? 'None',
         anonymizeIP: true,
       },
     ],
     [
       '@docusaurus/plugin-google-tag-manager',
       {
-        containerId: 'todo', // TODO: should set to real id
+        containerId: process.env.GOOGLE_TAG_MANAGER_ID ?? 'None',
       },
     ],
     [

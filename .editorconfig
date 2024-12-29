@@ -23,7 +23,7 @@ indent_size = 2
 indent_size = 2
 
 # Markdown
-[*.{md,markdown}]
+[*.{md,markdown,mdx}]
 indent_size = 2
 
 # Config files
