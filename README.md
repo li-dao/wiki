@@ -48,6 +48,8 @@ _Join a decentralized community committed to democratic values_
   - [Via Community Groups](#via-community-groups)
   - [Via GitHub Issues and Discussions](#via-github-issues-and-discussions)
 - [How to Contribute](#how-to-contribute)
+  - [Quick Links for Experienced Contributors](#quick-links-for-experienced-contributors)
+  - [New to Contributing?](#new-to-contributing)
 - [Wiki Structure](#wiki-structure)
 - [License](#license)
 
@@ -74,6 +76,30 @@ The **\$Li** Wiki is an initiative of the **\$Li** Community—a self-governing,
   - Hey, your wiki site is so ugly, I have some thoughts about the style: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml&title=%5BStyle%5D%3A+)
 
 ## How to Contribute
+
+We welcome contributions from everyone, regardless of your technical background!
+
+### Quick Links for Experienced Contributors
+
+- 🔗 [Fork the Repository](https://github.com/li-dao/wiki/fork)
+- 📝 [Open a Pull Request](https://github.com/li-dao/wiki/compare)
+- 📋 [View Open Issues](https://github.com/li-dao/wiki/issues)
+
+### New to Contributing?
+
+Visit our [Contributing Guide](https://www.lidao.wiki/contributing) for:
+
+- Step-by-step instructions
+- Security guidelines for contributors in China
+- Translation help
+- Technical setup guidance
+
+Not familiar with GitHub or Markdown? Or you think the [Contributing Guide](https://www.lidao.wiki/contributing) is too complicated? You can still contribute! Reach out to us via:
+
+- [Telegram](https://t.co/5Z1meSkAlZ)
+- [Email](mailto:really.need.anonymous@proton.me)
+
+Feel free to write in any language (e.g., Chinese, English, etc.) and in any format (e.g., Markdown, Word, etc.). The maintainers will guide you step-by-step to help you contribute to the Wiki or help you to submit your changes directly.
 
 ## Wiki Structure
 
