@@ -67,11 +67,11 @@ The **\$Li** Wiki is an initiative of the **\$Li** Community—a self-governing,
 
 - **Discussions:** [Participate Here](https://github.com/li-dao/wiki/discussions)
 - **Issues:**
-  - I found some wrong information in the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml)
-  - I am not satisfied with the current structure of the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml)
-  - I have some ideas about new content: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml)
-  - I have some questions about the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml)
-  - Hey, your wiki site is so ugly, I have some thoughts about the style: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml)
+  - I found some wrong information in the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml&title=%5BBug%5D%3A+)
+  - I am not satisfied with the current structure of the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml&title=%5BStructure%5D%3A+)
+  - I have some ideas about new content: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml&title=%5BContent%5D%3A+)
+  - I have some questions about the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml&title=%5BQuestion%5D%3A+)
+  - Hey, your wiki site is so ugly, I have some thoughts about the style: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml&title=%5BStyle%5D%3A+)
 
 ## How to Contribute
 
