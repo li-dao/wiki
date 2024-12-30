@@ -1,0 +1,57 @@
+name: ❓ Question
+description: Ask a question about the wiki
+title: "[Question]: "
+labels: ["question", "wiki"]
+assignees:
+  - really-need-anonymous
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your question about the wiki!
+  - type: dropdown
+    id: section
+    attributes:
+      label: Related Section
+      description: Which section is your question about?
+      options:
+        - 1. Introduction
+        - 2. Free Speech
+        - 3. Getting Started
+        - 4. Blockchain Basics
+        - 5. Blockchain Advanced
+        - 6. Community
+        - 7. Safety
+        - 8. Support & FAQ
+        - 9. Legal & Policy
+        - 0. General Question
+    validations:
+      required: true
+  - type: checkboxes
+    id: Language
+    attributes:
+      label: wiki-language
+      description: Which language version is your question about?
+      options:
+        - label: English
+          required: false
+        - label: 简体中文
+          required: false
+        - label: 繁体中文
+          required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: "I'd like to understand..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any additional context that might help us better answer your question?
+      placeholder: "e.g., what you've already tried, what you've read, etc."
+    validations:
+      required: false

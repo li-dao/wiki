@@ -1,0 +1,63 @@
+name: 📚 Structure Improvement
+description: Suggest improvements to the wiki structure
+title: "[Structure]: "
+labels: ["enhancement", "wiki", "structure"]
+assignees:
+  - really-need-anonymous
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve the wiki structure!
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      description: Which section needs restructuring?
+      options:
+        - 1. Introduction
+        - 2. Free Speech
+        - 3. Getting Started
+        - 4. Blockchain Basics
+        - 5. Blockchain Advanced
+        - 6. Community
+        - 7. Safety
+        - 8. Support & FAQ
+        - 9. Legal & Policy
+        - 0. Overall Structure
+    validations:
+      required: true
+  - type: checkboxes
+    id: Language
+    attributes:
+      label: wiki-language
+      description: Which language version are you suggesting changes for?
+      options:
+        - label: English
+          required: false
+        - label: 简体中文
+          required: false
+        - label: 繁体中文
+          required: false
+  - type: textarea
+    id: current-issues
+    attributes:
+      label: Current Issues
+      description: What problems do you see with the current structure?
+      placeholder: "The current structure is..."
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-changes
+    attributes:
+      label: Suggested Changes
+      description: How would you improve it?
+      placeholder: "I suggest reorganizing it like this..."
+    validations:
+      required: false
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any additional context or examples that might help?
+      placeholder: "e.g., similar wikis with good structure, specific use cases, etc."

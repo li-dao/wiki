@@ -1,0 +1,70 @@
+name: 📝 Content Request
+description: Suggest new content for the wiki
+title: "[Content]: "
+labels: ["enhancement", "wiki", "content"]
+assignees:
+  - really-need-anonymous
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting new content for the wiki!
+  - type: dropdown
+    id: section
+    attributes:
+      label: Related Section
+      description: Which section would this content belong to?
+      options:
+        - 1. Introduction
+        - 2. Free Speech
+        - 3. Getting Started
+        - 4. Blockchain Basics
+        - 5. Blockchain Advanced
+        - 6. Community
+        - 7. Safety
+        - 8. Support & FAQ
+        - 9. Legal & Policy
+    validations:
+      required: true
+  - type: checkboxes
+    id: Language
+    attributes:
+      label: wiki-language
+      description: Which language version are you suggesting content for?
+      options:
+        - label: English
+          required: false
+        - label: 简体中文
+          required: false
+        - label: 繁体中文
+          required: false
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: What topic would you like to see covered?
+      placeholder: "e.g., How to participate in governance voting"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please describe what content you'd like to see
+      placeholder: "This topic should cover..."
+    validations:
+      required: false
+  - type: textarea
+    id: resources
+    attributes:
+      label: Helpful Resources
+      description: Any helpful resources or references for this topic?
+      placeholder: "Links, documents, or other resources..."
+    validations:
+      required: false
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any additional context that might help?
+      placeholder: "e.g., why this content is important, who it would help, etc."

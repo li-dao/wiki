@@ -1,0 +1,70 @@
+name: 🐛 Wrong Information Report
+description: Report incorrect information in the wiki
+title: "[Bug]: "
+labels: ["bug", "wiki"]
+assignees:
+  - really-need-anonymous
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report incorrect information!
+  - type: dropdown
+    id: section
+    attributes:
+      label: Wiki Section
+      description: Which section contains the incorrect information?
+      options:
+        - 1. Introduction
+        - 2. Free Speech
+        - 3. Getting Started
+        - 4. Blockchain Basics
+        - 5. Blockchain Advanced
+        - 6. Community
+        - 7. Safety
+        - 8. Support & FAQ
+        - 9. Legal & Policy
+    validations:
+      required: true
+  - type: checkboxes
+    id: Language
+    attributes:
+      label: wiki-language
+      description: Which language is the incorrect information in?
+      options:
+        - label: English
+          required: false
+        - label: 简体中文
+          required: false
+        - label: 繁体中文
+          required: false
+  - type: input
+    id: page
+    attributes:
+      label: Specific Page
+      description: Which specific page contains the error?
+      placeholder: "e.g., blockchain/basic/Understanding/key-terms.md"
+    validations:
+      required: true
+  - type: textarea
+    id: incorrect-info
+    attributes:
+      label: Incorrect Information
+      description: What information is incorrect?
+      placeholder: "Please quote the incorrect information..."
+    validations:
+      required: true
+  - type: textarea
+    id: correct-info
+    attributes:
+      label: Correct Information
+      description: What should it be?
+      placeholder: "Please provide the correct information with sources if possible..."
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any additional information that might help us understand the issue?
+      placeholder: "e.g., the page's URL, the specific section, etc."
