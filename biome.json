@@ -89,6 +89,9 @@
     "enabled": true,
     "rules": {
       "all": true,
+      "correctness": {
+        "noUndeclaredDependencies": "off"
+      },
       "style": {
         "useNamingConvention": {
           "level": "warn",
@@ -96,6 +99,9 @@
             "strictCase": false
           }
         }
+      },
+      "suspicious": {
+        "noReactSpecificProps": "off"
       }
     }
   },
