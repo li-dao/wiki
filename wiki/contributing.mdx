@@ -1,0 +1,519 @@
+---
+title: How to Contribute
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - Contributing
+  - Guide
+  - Documentation
+  - Translation
+description: Guide for contributing to the $Li Wiki
+sidebar_label: Contributing
+draft: false
+last_update:
+  date: 2024-12-30
+  author: Developer and Contributors of $Li
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Welcome to the Contributing Guide! 👋
+
+We're excited that you're interested in contributing to the $Li Wiki. This guide will help you get started, regardless of your technical background.
+
+---
+
+### Who Should Read This?
+
+1. **Experienced Contributors (Familiar with GitHub and Markdown)**
+   If you're familiar with GitHub workflows and Markdown:
+   - **Recommended Action**: Open a pull request directly to the [repository](https://github.com/li-dao/wiki/pulls).
+   - **Important**: Please ensure you read the [Important Security Notice](#%EF%B8%8F-important-security-notice-for-contributors-in-china) before contributing.
+
+2. **New Contributors (Unfamiliar with GitHub or Markdown)**
+   If you're new to GitHub or Markdown:
+   - Connect with maintainers via [Telegram](https://t.co/5Z1meSkAlZ) or [email](mailto:really.need.anonymous@proton.me) for guidance.
+   - Alternatively, follow the step-by-step guide below to learn how to contribute securely and effectively.
+
+:::info
+
+If you think the guide below is too complicated, don't worry!
+
+You can reach out to the maintainers via [Telegram](https://t.co/5Z1meSkAlZ) or [email](mailto:really.need.anonymous@proton.me). Feel free to write in any language (e.g., Chinese, English, etc.) and in any format (e.g., Markdown, Word, etc.). The maintainers will guide you step-by-step to help you contribute to the Wiki or help you to submit your changes directly.
+
+:::
+
+---
+
+## ⚠️ Important Security Notice for Contributors in China
+
+:::danger
+
+Your safety is our top priority. If you're contributing from mainland China, follow these steps to protect your anonymity and ensure secure participation:
+
+:::
+
+### Step 1: Set Up an Anonymous GitHub Account
+
+- Create a new email account using [ProtonMail](https://proton.me/) (recommended for privacy)
+- [Sign up](https://github.com/signup) for GitHub using this new anonymous email
+- Don't use any personally identifiable information in your GitHub profile
+- Enable 2FA for additional security (refer to [GitHub's documentation](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication))
+
+
+### Step 2: Configure SSH for Multiple GitHub Accounts (Optional but Recommended)
+
+If you already have a personal GitHub account and want to keep it separate:
+
+<Tabs>
+<TabItem value="windows" label="Windows">
+
+1. **Generate a New SSH Key**
+   - Open PowerShell and run:
+     ```bash showLineNumbers
+     ssh-keygen -t ed25519 -C "anonymous@proton.me"
+     ```
+   - Save the key to a secure location (e.g., `C:\Users\YourUsername\.ssh\id_ed25519_anonymous`).
+
+2. **Update Your SSH Config**
+   - Navigate to the `.ssh` folder (e.g., `C:\Users\YourUsername\.ssh`) and create or edit a `config` file. Add the following lines:
+     ```plaintext showLineNumbers
+     Host github.com-anonymous
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/id_ed25519_anonymous
+         IdentitiesOnly yes
+     ```
+   - Save the file.
+
+3. **Add the SSH Key to GitHub**
+   - Copy the new SSH key to your clipboard:
+     ```bash showLineNumbers
+     cat ~/.ssh/id_ed25519_anonymous.pub
+     ```
+   - Open [GitHub SSH settings](https://github.com/settings/keys) and paste the key.
+
+</TabItem>
+
+<TabItem value="macos" label="macOS">
+
+1. **Generate a New SSH Key**
+   - Open Terminal and run:
+     ```bash showLineNumbers
+     ssh-keygen -t ed25519 -C "anonymous@proton.me"
+     ```
+   - Save the key as `~/.ssh/id_ed25519_anonymous`.
+
+2. **Update Your SSH Config**
+   - Open or create the `~/.ssh/config` file in a text editor and add the following:
+     ```plaintext showLineNumbers
+     Host github.com-anonymous
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/id_ed25519_anonymous
+         IdentitiesOnly yes
+     ```
+   - Save the file.
+
+3. **Add the SSH Key to GitHub**
+   - Copy the new SSH key to your clipboard:
+     ```bash showLineNumbers
+     cat ~/.ssh/id_ed25519_anonymous.pub
+     ```
+   - Open [GitHub SSH settings](https://github.com/settings/keys) and paste the key.
+
+</TabItem>
+</Tabs>
+
+
+### Step 3: Configure Repository for Anonymous Contributions
+
+1. **Clone the Repository Anonymously**
+   - Use the SSH alias you created:
+     ```bash showLineNumbers
+     git clone git@github.com-anonymous:{your-github-username}/{your-forked-repo-name}.git
+     ```
+
+2. **Set Anonymous Git Commit Information**
+   - Configure Git to use your anonymous identity:
+     ```bash showLineNumbers
+     git config user.name "anonymous-contributor"
+     git config user.email "anonymous@proton.me"
+     ```
+
+3. **Verify Configuration**
+   - Run the following to check your settings:
+     ```bash showLineNumbers
+     git config --get user.name
+     git config --get user.email
+     ```
+
+
+### Step 4: Additional Safety Tips
+
+- **Always Use a Reliable VPN**
+  - Use a trusted VPN when accessing GitHub to mask your IP address.
+  - Ensure the VPN has strong encryption and doesn't log user activity.
+
+- **Avoid Committing Personal Information**
+  - Double-check your commits to ensure no personal or sensitive data is included.
+
+- **Don't Link to Social Media**
+  - Keep your contributions entirely separate from your personal online accounts.
+
+
+---
+
+## Step-by-Step Guide for New Contributors
+
+This guide walks you through setting up your environment and making your first contribution to the $Li Wiki.
+
+---
+
+### Step 1: Install the Necessary Tools
+
+Before contributing, ensure you have the following tools installed on your computer:
+
+1. **Git**
+   - Git is required for version control.
+   - Download and install it from [git-scm.com](https://git-scm.com/).
+   - After installation, verify it by running the following command in your terminal:
+     ```bash showLineNumbers
+     git --version
+     ```
+
+2. **VS Code or Cursor**
+   - **VS Code**: A powerful code editor. Download it from [code.visualstudio.com](https://code.visualstudio.com/).
+   - **Cursor**: AI-powered editor for a streamlined experience. Visit [Cursor's website](https://www.cursor.so/) to download and install.
+
+3. **Bun (Optional)**
+   - Required if you plan to build and test the site locally.
+   - **Why Bun?** Bun is a modern JavaScript runtime that is faster and easier to use compared to Node.js.
+   - Install Bun by running the following command:
+     ```bash showLineNumbers
+     curl -fsSL https://bun.sh/install | bash
+     ```
+   - After installation, verify it by running:
+     ```bash showLineNumbers
+     bun --version
+     ```
+   - Learn more about Bun at the [official Bun documentation](https://bun.sh/).
+
+---
+
+### Step 2: Set Up Your GitHub Account
+
+> This section assumes you are new to GitHub. If you're already experienced, you can skip directly to the [repository setup](#step-3-fork-and-clone-the-repository).
+
+1. **Sign Up or Log In**
+   - If you don't already have a GitHub account, sign up at [github.com](https://github.com/).
+   - Use an anonymous email address if contributing from China (see [Important Security Notice](#%EF%B8%8F-important-security-notice-for-contributors-in-china)).
+
+2. **Enable Two-Factor Authentication (2FA) (Optional)**
+   - Enhance your account's security by enabling 2FA in your [GitHub account settings](https://github.com/settings/security).
+
+---
+
+### Step 3: Use an SSH Key
+
+> This section assumes you are new to GitHub. If you're already experienced, you can skip directly to the [repository setup](#step-3-fork-and-clone-the-repository).
+
+SSH keys provide a secure and convenient way to authenticate with GitHub. Follow the steps below based on your operating system:
+
+<Tabs>
+<TabItem value="windows" label="Windows">
+
+#### **Generate an SSH Key**
+
+1. Open PowerShell and run the following command:
+   ```bash showLineNumbers
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ```
+   - Replace `your_email@example.com` with the email address linked to your GitHub account.
+   - When prompted, specify the file location to save the key (default: `C:\Users\<YourUsername>\.ssh\id_ed25519`).
+   - If asked for a passphrase, press `Enter` to leave it blank or enter one for added security.
+
+2. Confirm the key files were created by navigating to your `.ssh` directory:
+   ```bash showLineNumbers
+   dir $HOME\.ssh
+   ```
+   - You should see `id_ed25519` (private key) and `id_ed25519.pub` (public key).
+
+#### **Add the SSH Key to the SSH Agent**
+
+1. Start the SSH agent:
+   ```bash showLineNumbers
+   Start-Service ssh-agent
+   ```
+2. Add your SSH private key to the agent:
+   ```bash showLineNumbers
+   ssh-add $HOME\.ssh\id_ed25519
+   ```
+
+#### **Add Your SSH Key to GitHub**
+
+1. Copy your public key to the clipboard:
+   ```bash showLineNumbers
+   Get-Content $HOME\.ssh\id_ed25519.pub | clip
+   ```
+2. Open [GitHub SSH settings](https://github.com/settings/keys).
+3. Click **"New SSH Key"**, provide a title (e.g., "My Laptop"), and paste the key into the provided field.
+4. Click **"Add SSH Key"** to save.
+
+#### **Test Your SSH Connection**
+
+1. Verify your SSH setup:
+   ```bash showLineNumbers
+   ssh -T git@github.com
+   ```
+   - You should see a message:
+     ```
+     Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
+     ```
+
+</TabItem>
+
+<TabItem value="macos" label="macOS">
+
+#### **Generate an SSH Key**
+
+1. Open Terminal and run:
+   ```bash showLineNumbers
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ```
+   - Replace `your_email@example.com` with the email address linked to your GitHub account.
+   - Save the key as `~/.ssh/id_ed25519`.
+   - If asked for a passphrase, press `Enter` to leave it blank or enter one for added security.
+
+2. Confirm the key files were created by listing the `.ssh` directory:
+   ```bash showLineNumbers
+   ls ~/.ssh
+   ```
+   - You should see `id_ed25519` (private key) and `id_ed25519.pub` (public key).
+
+#### **Add the SSH Key to the SSH Agent**
+
+1. Start the SSH agent:
+   ```bash showLineNumbers
+   eval "$(ssh-agent -s)"
+   ```
+2. Add your SSH private key to the agent:
+   ```bash showLineNumbers
+   ssh-add ~/.ssh/id_ed25519
+   ```
+
+#### **Add Your SSH Key to GitHub**
+
+1. Copy your public key to the clipboard:
+   ```bash showLineNumbers
+   cat ~/.ssh/id_ed25519.pub | pbcopy
+   ```
+2. Open [GitHub SSH settings](https://github.com/settings/keys).
+3. Click **"New SSH Key"**, provide a title (e.g., "My MacBook"), and paste the key into the provided field.
+4. Click **"Add SSH Key"** to save.
+
+#### **Test Your SSH Connection**
+
+1. Verify your SSH setup:
+   ```bash showLineNumbers
+   ssh -T git@github.com
+   ```
+   - You should see a message:
+     ```
+     Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
+     ```
+
+</TabItem>
+</Tabs>
+
+---
+
+### Step 3: Fork and Clone the Repository
+
+1. **Fork the Repository**
+   - Navigate to the [li-dao/wiki repository](https://github.com/li-dao/wiki).
+   - Click the "Fork" button in the top-right corner to create a copy of the repository under your GitHub account.
+
+![Fork the repository](/img/folk-repo.png)
+
+2. **Clone Your Fork Locally**
+   - Use Git to clone your fork to your local machine:
+     ```bash showLineNumbers
+     git clone git@github.com:<your-username>/wiki.git
+     ```
+   - Replace `<your-username>` with your GitHub username.
+
+3. **Navigate to the Project Directory**
+
+---
+
+### Step 4: Configure Git
+
+1. **Set Up Your User Information**
+   - Configure your Git username and email:
+     ```bash showLineNumbers
+     git config user.name "Your Anonymous Name"
+     git config user.email "your_anonymous_email@example.com"
+     ```
+
+2. **Check Your Configuration**
+   - Verify your settings:
+     ```bash showLineNumbers
+     git config --list
+     ```
+
+---
+
+### Step 5: Learn the Grammar of Markdown
+
+Markdown is a lightweight markup language that makes formatting documents simple and efficient. It's widely used on GitHub and in this project.
+
+1. **Start with Basic Markdown Syntax**
+   - Learn the basics of Markdown, including headings, lists, links, and code blocks, from the [Markdown Guide](https://www.markdownguide.org/).
+   - This guide provides examples and explanations for creating structured, readable documentation.
+
+2. **Explore Advanced Markdown Features**
+   - Since this project uses [Docusaurus](https://docusaurus.io/), you can take advantage of its extended Markdown features, such as:
+     - Embedding tabs
+     - Including admonitions (alerts and callouts)
+     - Custom components with MDX
+   - To dive deeper into these advanced features, visit the [Docusaurus Markdown Features Documentation](https://docusaurus.io/docs/markdown-features).
+
+
+Once you're comfortable with Markdown, you'll be ready to contribute effectively to the $Li Wiki documentation. Let's move to the next step!
+
+### Step 6: Make Changes to the Wiki
+
+Now that your environment is set up, you can start making contributions to the Wiki. Here's how to proceed:
+
+#### **Modify Existing Pages**
+
+1. Navigate to the `wiki` folder in your cloned repository:
+   - The folder contains all the existing documentation files.
+
+2. Open the file you want to edit in **VS Code** or **Cursor**:
+   - Make improvements to the content, such as fixing typos, adding new sections, or updating outdated information.
+
+3. Preview your changes locally (Optional):
+   - If you've installed **Bun** or **Node.js**, you can run the local development server:
+     ```bash showLineNumbers
+     bun run start
+     ```
+     - This will launch the documentation site locally on `http://localhost:3000`.
+
+4. Save your changes:
+   - Commit your updates once you're satisfied with the edits (instructions in Step 7).
+
+---
+
+#### **Add New Pages**
+
+1. **Create a New Markdown File**
+   - Add a `.md` or `.mdx` (for advanced features) file in the appropriate folder under `wiki`.
+   - For example, to create a new guide, place it in the `docs` folder.
+
+2. **Register the Page in the Sidebar**
+   - Open `src/sidebars.ts` in the root directory.
+   - Add an entry for your new page under the appropriate section. For example:
+     ```javascript
+     {
+       type: 'doc',
+       id: 'your-new-page-id',
+     }
+     ```
+     - Replace `your-new-page-id` with the file name (excluding the `.mdx` extension).
+
+3. **Preview Locally**
+   - Run the development server to verify that your new page is rendered correctly:
+     ```bash
+     bun run start
+     ```
+
+---
+
+#### **Set Up Multi-Language Support**
+
+If you want to make your contribution multilingual:
+
+1. Navigate to the `i18n` folder:
+   - This folder contains translations for different languages.
+
+2. Add translations for your content:
+   - Create a subfolder for the language (if it doesn't already exist), such as `i18n/zh-CN` for Simplified Chinese.
+
+3. Copy the content of your `.mdx` file into the language-specific folder:
+   - Translate the content into the target language.
+
+4. Test the multilingual feature:
+   - Build the site and check if the translations are displayed correctly.
+   - **Note**: use `bun run start` will not work for multi-language support, you need to use `bun run build` and then `bun run serve` to see the changes.
+
+---
+
+#### **Write in Any Language**
+
+- You can choose to write your contributions in any language you're comfortable with.
+- After submission, the maintainers will review your changes and coordinate translations into other languages.
+
+---
+
+### Step 7: Submit Your Changes
+
+Now that you've made changes to the Wiki, it's time to submit them to the main repository. Follow this guide to share your contributions:
+
+#### **For Beginners: Simple Guide**
+
+1. **Stage Your Changes**
+   - Add the files you modified to the staging area:
+     ```bash showLineNumbers
+     git add .
+     ```
+
+2. **Commit Your Changes**
+   - Save your changes with a descriptive commit message:
+     ```bash showLineNumbers
+     git commit -m "Add new page for contributing guide"
+     ```
+
+3. **Push Your Changes**
+   - Push your changes to your forked repository:
+     ```bash showLineNumbers
+     git push -u origin main
+     ```
+
+4. **Open a Pull Request**
+   - Go to your forked repository on GitHub.
+   - Click the **"Compare & pull request"** button.
+   - Add a meaningful title and description for your pull request.
+   - Submit your pull request to the main repository.
+
+---
+
+#### **For Advanced Users: Git Tutorial Links**
+
+- **Learn the Basics of Git**:
+  Visit [Git - Getting Started](https://git-scm.com/doc) to learn foundational concepts.
+
+- **GitHub-Specific Workflow**:
+  Check out GitHub's [How to Create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+
+- **Understand Branching and Merging**:
+  Explore Git's [Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) tutorial.
+
+---
+
+#### **What Happens Next?**
+
+1. **Review by Maintainers**
+   - Your pull request will be reviewed by the maintainers. They may ask for changes or provide feedback.
+
+2. **Merge into the Main Repository**
+   - Once approved, your pull request will be merged, and your contributions will be part of the Wiki! 🎉
+
+3. **Celebrate Your Contribution**
+   - You're officially a contributor to the $Li Wiki. Thank you for your efforts!
+
+### Congratulations! 🎉
+
+You're officially a contributor to the $Li Wiki. Thank you for your efforts!

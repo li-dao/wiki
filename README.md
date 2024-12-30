@@ -6,7 +6,7 @@
 
 **Everything you should know about the $Li and Snowflake Foundation**
 
-[Visit the Wiki](https://www.lidao.wiki)
+[📖 Visit the Wiki](https://www.lidao.wiki)
 
 [![GitHub Issues](https://img.shields.io/github/issues/li-dao/wiki)](https://github.com/li-dao/wiki/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/li-dao/wiki)](https://github.com/li-dao/wiki/pulls)
@@ -26,17 +26,17 @@
 
 <div align="center">
 
-**if you are a Novice of Blockchain**
+**🌱 If you are a Novice of Blockchain**
 
-_Learn about blockchain technology and how it empowers freedom of information_
+_Learn about blockchain technology and how it empowers freedom of information._
 
-**If you are fighting for Free Speech in China**
+**🗣️ If you are fighting for Free Speech in China**
 
-_We Support uncensored news and protect voices in restricted regions_
+_We support uncensored news and protect voices in restricted regions._
 
-**We are a Self-Governing Community**
+**🤝 We are a Self-Governing Community**
 
-_Join a decentralized community committed to democratic values_
+_Join a decentralized community committed to democratic values._
 
 </div>
 
@@ -44,38 +44,64 @@ _Join a decentralized community committed to democratic values_
 
 ## Table of Contents
 
-- [Questions and Suggestions](#questions-and-suggestions)
-  - [Via Community Groups](#via-community-groups)
-  - [Via GitHub Issues and Discussions](#via-github-issues-and-discussions)
-- [How to Contribute](#how-to-contribute)
-- [Wiki Structure](#wiki-structure)
-- [License](#license)
+- [❓ Questions and Suggestions](#-questions-and-suggestions)
+  - [💬 Via Community Groups](#-via-community-groups)
+  - [🔍 Via GitHub Issues and Discussions](#-via-github-issues-and-discussions)
+- [🤝 How to Contribute](#-how-to-contribute)
+  - [Quick Links for Experienced Contributors](#quick-links-for-experienced-contributors)
+  - [📘 New to Contributing?](#-new-to-contributing)
+- [📜 Wiki Structure](#-wiki-structure)
+- [📄 License](#-license)
 
 ---
 
-## Questions and Suggestions
+## ❓ Questions and Suggestions
 
 The **\$Li** Wiki is an initiative of the **\$Li** Community—a self-governing, decentralized group welcoming all voices striving for free speech in China. We value your input, regardless of your background or expertise.
 
-### Via Community Groups
+### 💬 Via Community Groups
 
-- **X (formerly Twitter):** [Follow Us](https://x.com/Li_memecoin)
-- **Telegram:** [Join the Conversation](https://t.co/5Z1meSkAlZ)
-- **GitHub:** [Visit the Repository](https://github.com/li-dao/wiki)
+- **📢 X (formerly Twitter):** [Follow Us](https://x.com/Li_memecoin)
+- **💬 Telegram:** [Join the Conversation](https://t.co/5Z1meSkAlZ)
+- **🌐 GitHub:** [Visit the Repository](https://github.com/li-dao/wiki)
 
-### Via GitHub Issues and Discussions
+### 🔍 Via GitHub Issues and Discussions
 
-- **Discussions:** [Participate Here](https://github.com/li-dao/wiki/discussions)
-- **Issues:**
-  - I found some wrong information in the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml)
-  - I am not satisfied with the current structure of the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml)
-  - I have some ideas about new content: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml)
-  - I have some questions about the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml)
-  - Hey, your wiki site is so ugly, I have some thoughts about the style: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml)
+- **💬 Discussions:** [Participate Here](https://github.com/li-dao/wiki/discussions)
+- **🐛 Issues:**
+  - I found some wrong information in the wiki: [🔗 Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml&title=%5BBug%5D%3A+)
+  - I am not satisfied with the current structure of the wiki: [🔗 Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml&title=%5BStructure%5D%3A+)
+  - I have some ideas about new content: [🔗 Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml&title=%5BContent%5D%3A+)
+  - I have some questions about the wiki: [🔗 Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml&title=%5BQuestion%5D%3A+)
+  - Hey, your wiki site is so ugly, I have some thoughts about the style: [🔗 Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml&title=%5BStyle%5D%3A+)
 
-## How to Contribute
+## 🤝 How to Contribute
 
-## Wiki Structure
+We welcome contributions from everyone, regardless of your technical background!
+
+### Quick Links for Experienced Contributors
+
+- 🔗 [Fork the Repository](https://github.com/li-dao/wiki/fork)
+- 📝 [Open a Pull Request](https://github.com/li-dao/wiki/compare)
+- 📋 [View Open Issues](https://github.com/li-dao/wiki/issues)
+
+### 📘 New to Contributing?
+
+Visit our [Contributing Guide](https://www.lidao.wiki/contributing) for:
+
+- 🛠️ Step-by-step instructions
+- 🛡️ Security guidelines for contributors in China
+- 🌍 Translation help
+- 🖥️ Technical setup guidance
+
+Not familiar with GitHub or Markdown? Or you think the [Contributing Guide](https://www.lidao.wiki/contributing) is too complicated? You can still contribute! Reach out to us via:
+
+- 💬 [Telegram](https://t.co/5Z1meSkAlZ)
+- 📧 [Email](mailto:really.need.anonymous@proton.me)
+
+Feel free to write in any language (e.g., Chinese, English, etc.) and in any format (e.g., Markdown, Word, etc.). The maintainers will guide you step-by-step to help you contribute to the Wiki or help you to submit your changes directly.
+
+## 📜 Wiki Structure
 
 ```plaintext
 wiki/
@@ -135,7 +161,7 @@ wiki/
     └── disclaimers.md                     # Disclaimers
 ```
 
-## License
+## 📄 License
 
 All the content in this wiki is licensed under [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 

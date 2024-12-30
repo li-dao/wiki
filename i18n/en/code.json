@@ -1,4 +1,7 @@
 {
+  "Ask a Question": {
+    "message": "Ask a Question"
+  },
   "Community Governance": {
     "message": "Community Governance"
   },
@@ -8,8 +11,32 @@
   "Fight for Free Speech": {
     "message": "Fight for Free Speech"
   },
+  "Found incorrect information in the wiki? Help us fix it!": {
+    "message": "Found incorrect information in the wiki? Help us fix it!"
+  },
+  "Have ideas about improving the wiki's appearance?": {
+    "message": "Have ideas about improving the wiki's appearance?"
+  },
+  "Have questions about the wiki? We're here to help!": {
+    "message": "Have questions about the wiki? We're here to help!"
+  },
+  "Have suggestions about how to organize the content better?": {
+    "message": "Have suggestions about how to organize the content better?"
+  },
+  "Help us improve the wiki by suggesting changes, reporting issues, or requesting new content.": {
+    "message": "Help us improve the wiki by suggesting changes, reporting issues, or requesting new content."
+  },
   "How to Contribute": {
     "message": "How to Contribute"
+  },
+  "Improve Wiki Structure": {
+    "message": "Improve Wiki Structure"
+  },
+  "Join Discussions": {
+    "message": "Join Discussions"
+  },
+  "Join Telegram": {
+    "message": "Join Telegram"
   },
   "Join a decentralized community committed to democratic values": {
     "message": "Join a decentralized community committed to democratic values"
@@ -20,14 +47,29 @@
   "Novice of Blockchain": {
     "message": "Novice of Blockchain"
   },
+  "Other Ways to Contribute": {
+    "message": "Other Ways to Contribute"
+  },
+  "Report Wrong Information": {
+    "message": "Report Wrong Information"
+  },
+  "Request New Content": {
+    "message": "Request New Content"
+  },
   "Start Reading": {
     "message": "Start Reading"
   },
   "Suggest Changes": {
     "message": "Suggest Changes"
   },
+  "Suggest Style Improvements": {
+    "message": "Suggest Style Improvements"
+  },
   "Support uncensored news and protect voices in restricted regions": {
     "message": "Support uncensored news and protect voices in restricted regions"
+  },
+  "Want to see new topics covered in the wiki?": {
+    "message": "Want to see new topics covered in the wiki?"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "description": "The ARIA label for close button of announcement bar",

@@ -6,7 +6,7 @@
 
 **关于 $Li 和 Snowflake 基金会的一切信息**
 
-[访问 Wiki](https://www.lidao.wiki)
+[📖 访问 Wiki](https://www.lidao.wiki)
 
 [![GitHub Issues](https://img.shields.io/github/issues/li-dao/wiki)](https://github.com/li-dao/wiki/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/li-dao/wiki)](https://github.com/li-dao/wiki/pulls)
@@ -26,15 +26,15 @@
 
 <div align="center">
 
-**如果您是区块链新手**
+**🌱 如果您是区块链新手**
 
 _了解区块链技术及其如何促进信息自由_
 
-**如果您正在为中国的言论自由而奋斗**
+**🗣️ 如果您正在为中国的言论自由而奋斗**
 
 _我们支持未经审查的新闻，并保护在受限制地区的声音_
 
-**我们是一个自我治理的社区**
+**🤝 我们是一个自我治理的社区**
 
 _加入一个致力于民主价值观的去中心化社区_
 
@@ -45,36 +45,62 @@ _加入一个致力于民主价值观的去中心化社区_
 ## 目录
 
 - [目录](#目录)
-- [问题和建议](#问题和建议)
-  - [通过社区渠道](#通过社区渠道)
-  - [通过 GitHub Issues 和 Discussions](#通过-github-issues-和-discussions)
-- [如何贡献](#如何贡献)
+- [❓ 问题和建议](#-问题和建议)
+  - [💬 通过社区渠道](#-通过社区渠道)
+  - [🔍 通过 GitHub Issues 和 Discussions](#-通过-github-issues-和-discussions)
+- [🤝 如何贡献](#-如何贡献)
+  - [🔗 熟悉 GitHub 的贡献者快速通道](#-熟悉-github-的贡献者快速通道)
+  - [📘 新手贡献指南](#-新手贡献指南)
 - [Wiki 结构](#wiki-结构)
-- [许可协议](#许可协议)
+- [📄 许可协议](#-许可协议)
 
 ---
 
-## 问题和建议
+## ❓ 问题和建议
 
 **\$Li** Wiki 是 **\$Li** 社区的一个项目。我们是一个自我治理的去中心化组织，欢迎所有致力于推动中国言论自由的声音。无论您的背景或专业知识如何，我们都非常重视您的意见。
 
-### 通过社区渠道
+### 💬 通过社区渠道
 
-- **X (原 Twitter):** [关注我们](https://x.com/Li_memecoin)
-- **Telegram:** [加入讨论](https://t.co/5Z1meSkAlZ)
-- **GitHub:** [访问我们的仓库](https://github.com/li-dao/wiki)
+- **📢 X (原 Twitter):** [关注我们](https://x.com/Li_memecoin)
+- **💬 Telegram:** [加入讨论](https://t.co/5Z1meSkAlZ)
+- **🌐 GitHub:** [访问我们的仓库](https://github.com/li-dao/wiki)
 
-### 通过 GitHub Issues 和 Discussions
+### 🔍 通过 GitHub Issues 和 Discussions
 
-- **Discussions:** [参与讨论](https://github.com/li-dao/wiki/discussions)
-- **Issues:**
-  - 我发现了 Wiki 中的一些错误信息：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml)
-  - 我对 Wiki 当前的结构不满意：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml)
-  - 我有一些关于新内容的想法：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml)
-  - 我对 Wiki 有一些问题：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml)
-  - 嘿，我觉得你们的 Wiki 网站太丑了，我有一些关于风格的建议：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml)
+- **💬 Discussions:** [参与讨论](https://github.com/li-dao/wiki/discussions)
+- **🐛 Issues:**
+  - 我发现了 Wiki 中的一些错误信息：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml&title=%5BBug%5D%3A+)
+  - 我对 Wiki 当前的结构不满意：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml&title=%5BStructure%5D%3A+)
+  - 我有一些关于新内容的想法：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml&title=%5BContent%5D%3A+)
+  - 我对 Wiki 有一些问题：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml&title=%5BQuestion%5D%3A+)
+  - 嘿，我觉得你们的 Wiki 网站太丑了，我有一些关于风格的建议：[点击这里](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml&title=%5BStyle%5D%3A+)
 
-## 如何贡献
+## 🤝 如何贡献
+
+我们欢迎所有人的贡献，无论您的技术背景如何！
+
+### 🔗 熟悉 GitHub 的贡献者快速通道
+
+- 🔗 [Fork 仓库](https://github.com/li-dao/wiki/fork)
+- 📝 [提交 Pull Request](https://github.com/li-dao/wiki/compare)
+- 📋 [查看待解决的 Issues](https://github.com/li-dao/wiki/issues)
+
+### 📘 新手贡献指南
+
+访问我们的[贡献指南](https://www.lidao.wiki/contributing)了解：
+
+- 📝 详细的步骤说明
+- 🛡️ 中国贡献者的安全指南
+- 🌍 翻译帮助
+- 🖥️ 技术环境设置指导
+
+不熟悉 GitHub 或 Markdown？或者觉得[贡献指南](https://www.lidao.wiki/contributing)太复杂？您仍然可以贡献！请通过以下方式联系我们：
+
+- 💬 [Telegram](https://t.co/5Z1meSkAlZ)
+- 📧 [Email](mailto:really.need.anonymous@proton.me)
+
+您可以使用任何语言（如中文、英文等）和任何格式（如 Markdown、Word 等）进行写作。维护者将一步步指导您为 Wiki 做出贡献或帮助您直接提交更改。
 
 ## Wiki 结构
 
@@ -136,7 +162,7 @@ wiki/
     └── disclaimers.md                     # 免责声明
 ```
 
-## 许可协议
+## 📄 许可协议
 
 本 Wiki 的所有内容均基于 CC-BY-NC-SA 4.0 许可协议。
 

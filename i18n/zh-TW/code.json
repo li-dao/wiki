@@ -1,4 +1,7 @@
 {
+  "Ask a Question": {
+    "message": "提出問題"
+  },
   "Community Governance": {
     "message": "社區治理"
   },
@@ -8,8 +11,32 @@
   "Fight for Free Speech": {
     "message": "為言論自由而戰"
   },
+  "Found incorrect information in the wiki? Help us fix it!": {
+    "message": "在 wiki 中發現了錯誤信息？幫助我們修復它！"
+  },
+  "Have ideas about improving the wiki's appearance?": {
+    "message": "有關於改進 wiki 外觀的想法？"
+  },
+  "Have questions about the wiki? We're here to help!": {
+    "message": "有關於 wiki 的問題？我們在這裡幫助你！"
+  },
+  "Have suggestions about how to organize the content better?": {
+    "message": "有關於如何更好地組織內容的建議？"
+  },
+  "Help us improve the wiki by suggesting changes, reporting issues, or requesting new content.": {
+    "message": "幫助我們通過提出更改、報告問題或請求新內容來改進 wiki。"
+  },
   "How to Contribute": {
     "message": "如何貢獻"
+  },
+  "Improve Wiki Structure": {
+    "message": "改進 wiki 結構"
+  },
+  "Join Discussions": {
+    "message": "加入討論"
+  },
+  "Join Telegram": {
+    "message": "加入 Telegram"
   },
   "Join a decentralized community committed to democratic values": {
     "message": "加入一個去中心化的社區，致力於民主價值"
@@ -20,14 +47,29 @@
   "Novice of Blockchain": {
     "message": "區塊鏈新手"
   },
+  "Other Ways to Contribute": {
+    "message": "其他貢獻方式"
+  },
+  "Report Wrong Information": {
+    "message": "發現錯誤信息？幫助我們修復它！"
+  },
+  "Request New Content": {
+    "message": "請求新內容"
+  },
   "Start Reading": {
     "message": "開始閱讀"
   },
   "Suggest Changes": {
     "message": "提出修改建議"
   },
+  "Suggest Style Improvements": {
+    "message": "提出樣式改進"
+  },
   "Support uncensored news and protect voices in restricted regions": {
-    "message": "支持未被审查的新闻，保护受限地区的声音"
+    "message": "支持未被審查的新聞，保護受限地區的聲音"
+  },
+  "Want to see new topics covered in the wiki?": {
+    "message": "想在 wiki 中看到新內容？"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
     "description": "The ARIA label for close button of announcement bar",
