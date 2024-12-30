@@ -64,7 +64,7 @@ function HomepageHeader() {
             <Translate>How to Contribute</Translate>
           </Link>
           <span>•</span>
-          <Link to='https://github.com/li-dao/wiki/issues'>
+          <Link to='/suggest-changes'>
             <Translate>Suggest Changes</Translate>
           </Link>
         </SecondaryLinks>
