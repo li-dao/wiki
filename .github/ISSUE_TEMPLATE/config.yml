@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Start a Discussion
+    url: https://github.com/li-dao/wiki/discussions
+    about: Start a discussion to discuss ideas, suggestions, and questions about the Wiki.
+  - name: Join the Telegram Group
+    url: https://t.co/5Z1meSkAlZ
+    about: Join the Telegram group to discuss ideas, suggestions, and questions about the Wiki.
+  - name: Follow on X
+    url: https://x.com/Li_memecoin
+    about: Follow on X to get the latest updates about the Wiki.

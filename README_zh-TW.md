@@ -68,11 +68,11 @@ _加入一個致力於民主價值觀的去中心化社區_
 
 - **Discussions:** [參與討論](https://github.com/li-dao/wiki/discussions)
 - **Issues:**
-  - 我發現了 Wiki 中的一些錯誤資訊：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=bug&template=bug_report.yml)
-  - 我對 Wiki 當前的結構不滿意：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=enhancement&template=feature_request_structure.yml)
-  - 我有一些關於新內容的想法：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=enhancement&template=content_request.yml)
-  - 我對 Wiki 有一些問題：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=question&template=question.yml)
-  - 嘿，我覺得你們的 Wiki 網站太醜了，我有一些關於風格的建議：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=style&template=style_report.yml)
+  - 我發現了 Wiki 中的一些錯誤資訊：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml)
+  - 我對 Wiki 當前的結構不滿意：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml)
+  - 我有一些關於新內容的想法：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml)
+  - 我對 Wiki 有一些問題：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml)
+  - 嘿，我覺得你們的 Wiki 網站太醜了，我有一些關於風格的建議：[點擊這裡](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml)
 
 ## 如何貢獻
 

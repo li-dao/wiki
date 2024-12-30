@@ -1,0 +1,65 @@
+name: 🎨 Style Improvement
+description: Suggest improvements to the wiki's appearance
+title: "[Style]: "
+labels: ["style", "wiki"]
+assignees:
+  - really-need-anonymous
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve the wiki's appearance!
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of the wiki needs style improvement?
+      options:
+        - 1. Navigation & Menu
+        - 2. Content Layout
+        - 3. Typography
+        - 4. Colors & Theme
+        - 5. Mobile View
+        - 6. Dark/Light Mode
+        - 7. Animations & Effects
+        - 8. Images & Media
+        - 9. Overall Design
+        - 0. Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: Language
+    attributes:
+      label: wiki-language
+      description: Which language version are you seeing this style issue in?
+      options:
+        - label: English
+          required: false
+        - label: 简体中文
+          required: false
+        - label: 繁体中文
+          required: false
+  - type: textarea
+    id: current-issues
+    attributes:
+      label: Current Issues
+      description: What problems do you see with the current style?
+      placeholder: "The current style is..."
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-changes
+    attributes:
+      label: Suggested Changes
+      description: How would you improve it?
+      placeholder: "I suggest changing..."
+    validations:
+      required: false
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples
+      description: Any examples or references for the suggested style?
+      placeholder: "e.g., similar websites, mockups, screenshots..."
+    validations:
+      required: false
