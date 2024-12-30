@@ -1,3 +1,7 @@
+compatiblelicenses
+creativecommons
 dracula
 easyops
 peaceiris
+sublicensable
+waivable
