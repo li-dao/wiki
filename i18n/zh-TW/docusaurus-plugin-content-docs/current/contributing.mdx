@@ -1,0 +1,309 @@
+---
+title: 如何貢獻
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - 貢獻
+  - 指南
+  - 文件
+  - 翻譯
+description: $Li Wiki 貢獻指南
+sidebar_label: 貢獻指南
+draft: false
+last_update:
+  date: 2024-12-30
+  author: $Li 的開發者和貢獻者
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## 歡迎閱讀貢獻指南！ 👋
+
+感謝您對 $Li Wiki 的興趣！無論您的技術背景如何，這份指南都將幫助您快速開始貢獻。
+
+---
+
+### 誰應該閱讀？
+
+1. **有經驗的貢獻者（熟悉 GitHub 和 Markdown）**
+   如果您已經熟悉 GitHub 的工作流程和 Markdown：
+   - **推薦操作**：直接向 [倉庫](https://github.com/li-dao/wiki/pulls) 提交拉取請求（Pull Request）。
+   - **重要提示**：在貢獻之前，請務必閱讀[重要的安全注意事項](#⚠️-中國大陸貢獻者的重要安全注意事項)。
+
+2. **新手貢獻者（不熟悉 GitHub 或 Markdown）**
+   如果您是 GitHub 或 Markdown 的新手：
+   - 可以透過 [Telegram](https://t.co/5Z1meSkAlZ) 或 [電子郵件](mailto:really.need.anonymous@proton.me) 聯絡維護人員以獲取幫助。
+   - 或者，按照以下分步指南，學習如何安全且有效地貢獻。
+
+:::info
+
+如果覺得下面的指南太複雜，不用擔心！
+
+您可以透過 [Telegram](https://t.co/5Z1meSkAlZ) 或 [電子郵件](mailto:really.need.anonymous@proton.me) 聯絡維護人員。您可以使用任何語言（如中文、英文等）和任何格式（如 Markdown、Word 等）提交您的內容，維護人員會一步步指導您完成貢獻，或直接幫助您提交更改。
+
+:::
+
+---
+
+## ⚠️ 中國大陸貢獻者的重要安全注意事項
+
+:::danger
+
+您的安全是我們的首要任務。如果您在中國大陸進行貢獻，請務必按照以下步驟操作，以保護您的匿名性並確保參與的安全。
+
+:::
+
+### 第一步：創建匿名的 GitHub 帳戶
+
+- 使用 [ProtonMail](https://proton.me/) 創建一個新的電子郵件帳戶（推薦用於隱私保護）。
+- 使用這個新的匿名電子郵件地址在 [GitHub](https://github.com/signup) 上註冊。
+- 不要在 GitHub 個人資料中填寫任何可能洩露身份的個人資訊。
+- 啟用雙因素驗證（2FA）以增強帳戶安全性（參考 [GitHub 文檔](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication)）。
+
+---
+
+### 第二步：為多個 GitHub 帳戶配置 SSH（可選但推薦）
+
+如果您已經有一個個人 GitHub 帳戶，並希望與匿名帳戶分開使用：
+
+<Tabs>
+<TabItem value="windows" label="Windows">
+
+#### **生成 SSH 密鑰**
+
+1. 打開 PowerShell 並運行以下命令：
+   ```bash
+   ssh-keygen -t ed25519 -C "anonymous@proton.me"
+   ```
+   - 將密鑰保存到安全位置（例如 `C:\Users\YourUsername\.ssh\id_ed25519_anonymous`）。
+
+2. **更新 SSH 配置文件**
+   - 移至 `.ssh` 資料夾（例如 `C:\Users\YourUsername\.ssh`），創建或編輯 `config` 文件，並添加以下內容：
+     ```plaintext
+     Host github.com-anonymous
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/id_ed25519_anonymous
+         IdentitiesOnly yes
+     ```
+   - 保存文件。
+
+3. **將 SSH 密鑰添加到 GitHub**
+   - 將公鑰複製到剪貼板：
+     ```bash
+     cat ~/.ssh/id_ed25519_anonymous.pub
+     ```
+   - 打開 [GitHub SSH 設定](https://github.com/settings/keys) 並貼上密鑰。
+
+</TabItem>
+
+<TabItem value="macos" label="macOS">
+
+#### **生成 SSH 密鑰**
+
+1. 打開終端並運行：
+   ```bash
+   ssh-keygen -t ed25519 -C "anonymous@proton.me"
+   ```
+   - 將密鑰保存為 `~/.ssh/id_ed25519_anonymous`。
+
+2. **更新 SSH 配置文件**
+   - 編輯或創建 `~/.ssh/config` 文件，並添加以下內容：
+     ```plaintext
+     Host github.com-anonymous
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/id_ed25519_anonymous
+         IdentitiesOnly yes
+     ```
+   - 保存文件。
+
+3. **將 SSH 密鑰添加到 GitHub**
+   - 將公鑰複製到剪貼板：
+     ```bash
+     cat ~/.ssh/id_ed25519_anonymous.pub | pbcopy
+     ```
+   - 打開 [GitHub SSH 設定](https://github.com/settings/keys) 並貼上密鑰。
+
+</TabItem>
+</Tabs>
+
+---
+
+### 第三步：Fork 和 Clone 倉庫
+
+1. **Fork 倉庫**
+   - 訪問 [li-dao/wiki 倉庫](https://github.com/li-dao/wiki)。
+   - 點擊頁面右上角的 **“Fork”** 按鈕，將倉庫複製到您的 GitHub 帳戶中。
+
+2. **克隆您的 Fork**
+   - 使用 Git 將您的 Fork 克隆到本地：
+     ```bash
+     git clone git@github.com:<your-username>/wiki.git
+     ```
+   - 將 `<your-username>` 替換為您的 GitHub 使用者名稱。
+
+3. **進入專案目錄**
+   - 進入克隆的專案目錄：
+     ```bash
+     cd wiki
+     ```
+
+---
+
+### 第四步：學習 Markdown 語法
+
+Markdown 是一種輕量級的標記語言，用於高效地格式化文件。
+
+1. **學習基礎語法**
+   - 訪問 [Markdown 指南](https://www.markdownguide.org/) 學習標題、列表、鏈接和代碼塊等基礎語法。
+   - 該指南提供了示例和詳細說明，幫助您快速上手。
+
+2. **探索高級 Markdown 功能**
+   - 本專案使用 [Docusaurus](https://docusaurus.io/)，支持擴展的 Markdown 功能，包括：
+     - 嵌入選項卡
+     - 添加提示框（如警告、信息框）
+     - 使用 MDX 自定義組件
+   - 了解更多高級功能，請訪問 [Docusaurus Markdown 功能文檔](https://docusaurus.io/docs/markdown-features)。
+
+---
+
+### 第六步：修改 Wiki
+
+現在您已經完成了環境設置，可以開始對 Wiki 進行貢獻了。以下是具體步驟：
+
+#### **修改現有頁面**
+
+1. **定位到 `wiki` 資料夾**
+   - 該資料夾包含所有現有的文檔文件。
+
+2. **在 VS Code 或 Cursor 中打開文件**
+   - 對內容進行改進，例如修正拼寫錯誤、添加新部分或更新過時的資訊。
+
+3. **本地預覽更改（可選）**
+   - 如果您已經安裝了 **Bun** 或 **Node.js**，可以運行本地開發伺服器：
+     ```bash
+     bun run start
+     ```
+     - 伺服器將在 `http://localhost:3000` 啟動，您可以在瀏覽器中查看您的更改。
+
+4. **保存更改**
+   - 確保所有更改都已完成，保存文件，準備提交。
+
+---
+
+#### **添加新頁面**
+
+1. **創建一個新 Markdown 文件**
+   - 在 `wiki` 下的適當資料夾中添加 `.md` 或 `.mdx` 文件。
+   - 例如，要創建一個新指南，請將其放在 `docs` 資料夾中。
+
+2. **在側邊欄註冊頁面**
+   - 打開根目錄下的 `src/sidebars.ts` 文件。
+   - 在適當的部分下添加新頁面的條目，例如：
+     ```javascript
+     {
+       type: 'doc',
+       id: 'your-new-page-id',
+     }
+     ```
+     - 將 `your-new-page-id` 替換為文件名稱（不包括 `.mdx` 擴展名）。
+
+3. **本地預覽新頁面**
+   - 運行開發伺服器，驗證新頁面是否正確呈現：
+     ```bash
+     bun run start
+     ```
+
+---
+
+#### **設置多語言支持**
+
+如果希望您的貢獻支持多種語言：
+
+1. **導航到 `i18n` 資料夾**
+   - 該資料夾包含不同語言的翻譯內容。
+
+2. **為您的內容添加翻譯**
+   - 如果目標語言的子資料夾尚不存在，請創建一個，例如 `i18n/zh-TW` 表示繁體中文。
+
+3. **將您的 `.mdx` 文件複製到目標語言的資料夾中**
+   - 並將內容翻譯成目標語言。
+
+4. **測試多語言功能**
+   - 運行以下命令構建站點並檢查翻譯效果：
+     ```bash
+     bun run build
+     bun run serve
+     ```
+
+---
+
+#### **用任何語言書寫**
+
+- 您可以使用任何您擅長的語言撰寫貢獻內容。
+- 提交後，維護人員會審查您的更改，並協調將內容翻譯成其他語言。
+
+---
+
+### 第七步：提交更改
+
+現在，您已經完成了 Wiki 的更改，可以將這些更改提交到主倉庫。
+
+#### **新手指南**
+
+1. **暫存更改**
+   - 將您修改的文件添加到暫存區：
+     ```bash
+     git add .
+     ```
+
+2. **提交更改**
+   - 使用描述性提交訊息保存您的更改：
+     ```bash
+     git commit -m "新增貢獻指南的頁面"
+     ```
+
+3. **推送更改**
+   - 將您的更改推送到您 Fork 的倉庫：
+     ```bash
+     git push -u origin main
+     ```
+
+4. **發起 Pull Request**
+   - 前往您 Fork 的 GitHub 倉庫。
+   - 點擊 **“Compare & pull request”** 按鈕。
+   - 添加有意義的標題和描述，然後提交 Pull Request 到主倉庫。
+
+---
+
+#### **進階用戶：Git 教程鏈接**
+
+- **Git 基礎教程**
+  訪問 [Git - Getting Started](https://git-scm.com/doc) 學習 Git 的基礎知識。
+
+- **GitHub 特定工作流**
+  閱讀 GitHub 的 [如何創建 Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)。
+
+- **了解分支與合併**
+  參考 [Git 分支與合併](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 教程。
+
+---
+
+#### **提交後會發生什麼？**
+
+1. **維護人員審查**
+   - 您的 Pull Request 將由維護人員審查，他們可能會提出修改建議或提供反饋。
+
+2. **合併到主倉庫**
+   - 一旦通過審查，您的 Pull Request 將被合併，您的貢獻將成為 Wiki 的一部分！ 🎉
+
+3. **慶祝您的貢獻**
+   - 恭喜！您正式成為 $Li Wiki 的貢獻者。感謝您的努力！
+
+---
+
+### 恭喜！ 🎉
+
+感謝您的貢獻，$Li Wiki 因您更進一步！如果您還有其他問題或需要進一步指導，請隨時聯繫維護人員。 😊

@@ -60,7 +60,7 @@ function HomepageHeader() {
         </FeatureCards>
 
         <SecondaryLinks>
-          <Link to='https://github.com/li-dao/wiki/blob/main/CONTRIBUTING.md'>
+          <Link to='/contributing'>
             <Translate>How to Contribute</Translate>
           </Link>
           <span>•</span>

@@ -1,0 +1,498 @@
+---
+title: 如何参与 $Li Wiki 的写作
+hide_title: false
+hide_table_of_contents: false
+keywords:
+  - 贡献
+  - 指南
+  - 文档
+  - 翻译
+description: $Li Wiki 贡献指南
+sidebar_label: 贡献指南
+draft: false
+last_update:
+  date: 2024-12-30
+  author: $Li 的开发者和贡献者
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## 欢迎阅读贡献指南！ 👋
+
+感谢你对 $Li Wiki 的兴趣！无论你的技术背景如何，这份指南都将帮助你快速开始贡献。
+
+---
+
+### 谁应该阅读？
+
+1. **有经验的贡献者（熟悉 GitHub 和 Markdown）**
+   如果你已经熟悉 GitHub 的工作流程和 Markdown：
+   - **推荐操作**：直接向 [仓库](https://github.com/li-dao/wiki/pulls) 提交拉取请求（Pull Request）。
+   - **重要提示**：在贡献之前，请务必阅读[重要的安全注意事项](#%EF%B8%8F-重要的安全注意事项)。
+
+2. **新手贡献者（不熟悉 GitHub 或 Markdown）**
+   如果你是 GitHub 或 Markdown 的新手：
+   - 可以通过 [Telegram](https://t.co/5Z1meSkAlZ) 或 [电子邮件](mailto:really.need.anonymous@proton.me) 联系维护人员以获取帮助。
+   - 或者，按照下面的分步指南，学习如何安全、有效地贡献。
+
+:::info
+
+如果觉得下面的指南太复杂，不用担心！
+
+你可以通过 [Telegram](https://t.co/5Z1meSkAlZ) 或 [电子邮件](mailto:really.need.anonymous@proton.me) 联系维护人员。你可以使用任何语言（如中文、英文等）和任何格式（如 Markdown、Word 等）提交你的内容，维护人员会一步步指导你完成贡献或直接帮助你提交更改。
+
+:::
+
+---
+
+## ⚠️ 中国大陆贡献者的重要安全注意事项
+
+:::danger
+
+你的安全是我们的首要任务。如果你在中国大陆进行贡献，请务必按照以下步骤操作，以保护你的匿名性并确保参与的安全。
+
+:::
+
+### 第一步：创建匿名的 GitHub 账户
+
+- 使用 [ProtonMail](https://proton.me/) 创建一个新的电子邮件账户（推荐用于隐私保护）。
+- 使用这个新的匿名电子邮件地址在 [GitHub](https://github.com/signup) 上注册。
+- 不要在 GitHub 个人资料中填写任何可能泄露身份的个人信息。
+- 启用两步验证（2FA）以增强账户安全性（参考 [GitHub 文档](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication)）。
+
+---
+
+### 第二步：为多个 GitHub 账户配置 SSH（可选但推荐）
+
+如果你已经有一个个人 GitHub 账户，并希望与匿名账户分开使用：
+
+<Tabs>
+<TabItem value="windows" label="Windows">
+
+#### **生成 SSH 密钥**
+
+1. 打开 PowerShell 并运行以下命令：
+   ```bash
+   ssh-keygen -t ed25519 -C "anonymous@proton.me"
+   ```
+   - 将密钥保存到安全位置（例如 `C:\Users\YourUsername\.ssh\id_ed25519_anonymous`）。
+
+2. **更新 SSH 配置文件**
+   - 转到 `.ssh` 文件夹（例如 `C:\Users\YourUsername\.ssh`），创建或编辑 `config` 文件，并添加以下内容：
+     ```plaintext
+     Host github.com-anonymous
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/id_ed25519_anonymous
+         IdentitiesOnly yes
+     ```
+   - 保存文件。
+
+3. **将 SSH 密钥添加到 GitHub**
+   - 将公钥复制到剪贴板：
+     ```bash
+     cat ~/.ssh/id_ed25519_anonymous.pub
+     ```
+   - 打开 [GitHub SSH 设置](https://github.com/settings/keys) 并粘贴密钥。
+
+</TabItem>
+
+<TabItem value="macos" label="macOS">
+
+#### **生成 SSH 密钥**
+
+1. 打开终端并运行：
+   ```bash
+   ssh-keygen -t ed25519 -C "anonymous@proton.me"
+   ```
+   - 将密钥保存为 `~/.ssh/id_ed25519_anonymous`。
+
+2. **更新 SSH 配置文件**
+   - 编辑或创建 `~/.ssh/config` 文件，并添加以下内容：
+     ```plaintext
+     Host github.com-anonymous
+         HostName github.com
+         User git
+         IdentityFile ~/.ssh/id_ed25519_anonymous
+         IdentitiesOnly yes
+     ```
+   - 保存文件。
+
+3. **将 SSH 密钥添加到 GitHub**
+   - 将公钥复制到剪贴板：
+     ```bash
+     cat ~/.ssh/id_ed25519_anonymous.pub | pbcopy
+     ```
+   - 打开 [GitHub SSH 设置](https://github.com/settings/keys) 并粘贴密钥。
+
+</TabItem>
+</Tabs>
+
+---
+
+### 第三步：为匿名贡献配置仓库
+
+1. **匿名克隆仓库**
+   - 使用你创建的 SSH 别名：
+     ```bash
+     git clone git@github.com-anonymous:{your-github-username}/{your-forked-repo-name}.git
+     ```
+
+2. **设置匿名的 Git 提交信息**
+   - 配置 Git 使用匿名身份：
+     ```bash
+     git config user.name "anonymous-contributor"
+     git config user.email "anonymous@proton.me"
+     ```
+
+3. **验证配置**
+   - 检查你的设置：
+     ```bash
+     git config --get user.name
+     git config --get user.email
+     ```
+
+---
+
+### 第四步：额外的安全提示
+
+- **始终使用可靠的 VPN**
+  - 使用受信任的 VPN 访问 GitHub，以隐藏你的 IP 地址。
+  - 确保 VPN 具有强加密功能，并且不会记录用户活动。
+
+- **避免提交个人信息**
+  - 仔细检查你的提交内容，确保没有包含任何个人或敏感数据。
+
+- **不要链接到社交媒体**
+  - 将你的贡献与个人在线账户完全分开。
+
+---
+
+## 分步指南：为新手贡献者提供帮助
+
+---
+
+### 第一步：安装必要工具
+
+1. **Git**
+   - 下载并安装 [Git](https://git-scm.com/)。
+   - 验证安装是否成功：
+     ```bash
+     git --version
+     ```
+
+2. **VS Code 或 Cursor**
+   - 下载 [VS Code](https://code.visualstudio.com/) 或 [Cursor](https://www.cursor.so/) 以编辑项目。
+
+3. **Bun（可选）**
+   - 如果计划本地构建和测试站点，安装 [Bun](https://bun.sh/)：
+     ```bash
+     curl -fsSL https://bun.sh/install | bash
+     ```
+   - 验证安装：
+     ```bash
+     bun --version
+     ```
+
+---
+
+### 第二步：设置 GitHub 账户
+
+> 本部分适合新手用户。如果你已经熟悉 GitHub，可以直接跳到 [第三步](#第三步：使用 SSH 密钥)。
+
+1. **注册或登录**
+   - 如果你还没有 GitHub 账户，请访问 [github.com](https://github.com/) 注册。
+   - 如果你在中国大陆，请使用匿名的电子邮件地址（详见[重要的安全注意事项](#⚠️-中国大陆贡献者的重要安全注意事项)）。
+
+2. **启用双因素认证（2FA，推荐）**
+   - 在你的 [GitHub 账户安全设置](https://github.com/settings/security) 中启用 2FA，以提升账户安全性。
+
+---
+
+### 第三步：使用 SSH 密钥
+
+SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步骤，根据你的操作系统完成设置：
+
+<Tabs>
+<TabItem value="windows" label="Windows">
+
+#### **生成 SSH 密钥**
+
+1. 打开 PowerShell 并运行以下命令：
+   ```bash
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ```
+   - 将 `your_email@example.com` 替换为你 GitHub 账户关联的电子邮件。
+   - 默认情况下，密钥将保存到 `C:\Users\<YourUsername>\.ssh\id_ed25519`。
+
+2. 确保密钥已生成：
+   ```bash
+   dir $HOME\.ssh
+   ```
+   - 你应该看到 `id_ed25519`（私钥）和 `id_ed25519.pub`（公钥）。
+
+#### **将 SSH 密钥添加到 SSH 代理**
+
+1. 启动 SSH 代理：
+   ```bash
+   Start-Service ssh-agent
+   ```
+2. 添加私钥到代理：
+   ```bash
+   ssh-add $HOME\.ssh\id_ed25519
+   ```
+
+#### **将 SSH 密钥添加到 GitHub**
+
+1. 复制公钥到剪贴板：
+   ```bash
+   Get-Content $HOME\.ssh\id_ed25519.pub | clip
+   ```
+2. 打开 [GitHub SSH 设置](https://github.com/settings/keys)。
+3. 点击 **“New SSH Key”**，提供一个标题（如“我的笔记本”），然后粘贴密钥。
+4. 点击 **“Add SSH Key”** 保存。
+
+#### **测试 SSH 连接**
+
+1. 验证 SSH 设置：
+   ```bash
+   ssh -T git@github.com
+   ```
+   - 你应该看到类似以下的信息：
+     ```
+     Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
+     ```
+
+</TabItem>
+
+<TabItem value="macos" label="macOS">
+
+#### **生成 SSH 密钥**
+
+1. 打开终端并运行：
+   ```bash
+   ssh-keygen -t ed25519 -C "your_email@example.com"
+   ```
+   - 将 `your_email@example.com` 替换为你 GitHub 账户关联的电子邮件。
+   - 默认情况下，密钥将保存为 `~/.ssh/id_ed25519`。
+
+2. 确保密钥已生成：
+   ```bash
+   ls ~/.ssh
+   ```
+   - 你应该看到 `id_ed25519`（私钥）和 `id_ed25519.pub`（公钥）。
+
+#### **将 SSH 密钥添加到 SSH 代理**
+
+1. 启动 SSH 代理：
+   ```bash
+   eval "$(ssh-agent -s)"
+   ```
+2. 添加私钥到代理：
+   ```bash
+   ssh-add ~/.ssh/id_ed25519
+   ```
+
+#### **将 SSH 密钥添加到 GitHub**
+
+1. 复制公钥到剪贴板：
+   ```bash
+   cat ~/.ssh/id_ed25519.pub | pbcopy
+   ```
+2. 打开 [GitHub SSH 设置](https://github.com/settings/keys)。
+3. 点击 **“New SSH Key”**，提供一个标题（如“我的 MacBook”），然后粘贴密钥。
+4. 点击 **“Add SSH Key”** 保存。
+
+#### **测试 SSH 连接**
+
+1. 验证 SSH 设置：
+   ```bash
+   ssh -T git@github.com
+   ```
+   - 你应该看到类似以下的信息：
+     ```
+     Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
+     ```
+
+</TabItem>
+</Tabs>
+
+---
+
+### 第四步：Fork 和 Clone 仓库
+
+1. **Fork 仓库**
+   - 访问 [li-dao/wiki 仓库](https://github.com/li-dao/wiki)。
+   - 点击页面右上角的 **“Fork”** 按钮，将仓库复制到你的 GitHub 账户中。
+
+2. **克隆你的 Fork**
+   - 使用 Git 将你的 Fork 克隆到本地：
+     ```bash
+     git clone git@github.com:<your-username>/wiki.git
+     ```
+   - 将 `<your-username>` 替换为你的 GitHub 用户名。
+
+3. **进入项目目录**
+   - 进入克隆的项目目录：
+     ```bash
+     cd wiki
+     ```
+
+---
+
+### 第五步：学习 Markdown 语法
+
+Markdown 是一种轻量级的标记语言，用于高效地格式化文档。
+
+1. **学习基础语法**
+   - 访问 [Markdown 指南](https://www.markdownguide.org/) 学习标题、列表、链接和代码块等基础语法。
+   - 此指南提供了示例和详细说明，帮助你快速上手。
+
+2. **探索高级 Markdown 功能**
+   - 本项目使用 [Docusaurus](https://docusaurus.io/)，支持扩展的 Markdown 功能，包括：
+     - 嵌入选项卡
+     - 添加提示框（如警告、信息框）
+     - 使用 MDX 自定义组件
+   - 了解更多高级功能，请访问 [Docusaurus Markdown 功能文档](https://docusaurus.io/docs/markdown-features)。
+
+---
+
+### 第六步：修改 Wiki
+
+现在你已经完成了环境设置，可以开始对 Wiki 进行贡献了。以下是具体步骤：
+
+#### **修改现有页面**
+
+1. **定位到 `wiki` 文件夹**
+   - 该文件夹包含所有现有文档文件。
+
+2. **在 VS Code 或 Cursor 中打开文件**
+   - 对内容进行改进，例如修正拼写错误、添加新部分或更新过时信息。
+
+3. **本地预览更改（可选）**
+   - 如果你已经安装了 **Bun** 或 **Node.js**，可以运行本地开发服务器：
+     ```bash
+     bun run start
+     ```
+     - 服务器将在 `http://localhost:3000` 启动，你可以在浏览器中查看你的更改。
+
+4. **保存更改**
+   - 确保所有更改都已完成，保存文件，并准备提交更改。
+
+---
+
+#### **添加新页面**
+
+1. **创建一个新 Markdown 文件**
+   - 在 `wiki` 下的适当文件夹中添加 `.md` 或 `.mdx` 文件。
+   - 例如，要创建一个新指南，请将其放在 `docs` 文件夹中。
+
+2. **在侧边栏注册页面**
+   - 打开根目录下的 `src/sidebars.ts` 文件。
+   - 在适当的部分下添加新页面的条目，例如：
+     ```javascript
+     {
+       type: 'doc',
+       id: 'your-new-page-id',
+     }
+     ```
+     - 将 `your-new-page-id` 替换为文件名（不包括 `.mdx` 扩展名）。
+
+3. **本地预览新页面**
+   - 运行开发服务器，验证新页面是否正确呈现：
+     ```bash
+     bun run start
+     ```
+
+---
+
+#### **设置多语言支持**
+
+如果希望你的贡献支持多种语言：
+
+1. **导航到 `i18n` 文件夹**
+   - 该文件夹包含不同语言的翻译内容。
+
+2. **为你的内容添加翻译**
+   - 如果目标语言的子文件夹尚不存在，请创建一个，例如 `i18n/zh-CN` 表示简体中文。
+
+3. **将你的 `.mdx` 文件复制到目标语言的文件夹中**
+   - 并将内容翻译成目标语言。
+
+4. **测试多语言功能**
+   - 运行以下命令构建站点，并查看翻译效果：
+     ```bash
+     bun run build
+     bun run serve
+     ```
+
+---
+
+#### **用任何语言书写**
+
+- 你可以使用任何你擅长的语言编写贡献内容。
+- 提交后，维护人员会审查你的更改，并协调将内容翻译成其他语言。
+
+---
+
+### 第七步：提交更改
+
+现在，你已经完成了 Wiki 的更改，可以将更改提交到主仓库。
+
+#### **新手指南**
+
+1. **暂存更改**
+   - 将你修改的文件添加到暂存区：
+     ```bash
+     git add .
+     ```
+
+2. **提交更改**
+   - 使用描述性提交消息保存你的更改：
+     ```bash
+     git commit -m "添加贡献指南的新页面"
+     ```
+
+3. **推送更改**
+   - 将你的更改推送到你 Fork 的仓库：
+     ```bash
+     git push -u origin main
+     ```
+
+4. **发起 Pull Request**
+   - 转到你 Fork 的 GitHub 仓库。
+   - 点击 **“Compare & pull request”** 按钮。
+   - 添加有意义的标题和描述，然后提交 Pull Request 到主仓库。
+
+---
+
+#### **进阶用户：Git 教程链接**
+
+- **Git 基础教程**
+  访问 [Git - Getting Started](https://git-scm.com/doc) 学习 Git 的基础知识。
+
+- **GitHub 特定工作流**
+  阅读 GitHub 的 [如何创建 Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)。
+
+- **了解分支与合并**
+  参考 [Git 分支与合并](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 教程。
+
+---
+
+#### **提交后会发生什么？**
+
+1. **维护人员审查**
+   - 你的 Pull Request 将由维护人员审查，他们可能会提出修改建议或提供反馈。
+
+2. **合并到主仓库**
+   - 一旦通过审查，你的 Pull Request 将被合并，你的贡献将成为 Wiki 的一部分！ 🎉
+
+3. **庆祝你的贡献**
+   - 恭喜！你正式成为 $Li Wiki 的贡献者。感谢你的努力！
+
+---
+
+### 恭喜！ 🎉
+
+感谢你的贡献，$Li Wiki 因你更进一步！如果你还有其他问题或需要进一步指导，请随时联系维护人员。 😊
