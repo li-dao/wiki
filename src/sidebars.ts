@@ -61,10 +61,10 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           label: '🔄 5.1. Advanced Concepts',
           items: [
-            'blockchain/advanced/proof-of-history',
-            'blockchain/advanced/smart-contracts',
-            'blockchain/advanced/bridging',
-            'blockchain/advanced/zero-knowledge',
+            'blockchain/advanced/advanced-concept/proof-of-history',
+            'blockchain/advanced/advanced-concept/smart-contracts',
+            'blockchain/advanced/advanced-concept/bridging',
+            'blockchain/advanced/advanced-concept/zero-knowledge',
           ],
         },
         {
