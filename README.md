@@ -67,11 +67,11 @@ The **\$Li** Wiki is an initiative of the **\$Li** Community—a self-governing,
 
 - **Discussions:** [Participate Here](https://github.com/li-dao/wiki/discussions)
 - **Issues:**
-  - I found some wrong information in the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=bug&template=bug_report.yml)
-  - I am not satisfied with the current structure of the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=enhancement&template=feature_request_structure.yml)
-  - I have some ideas about new content: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=enhancement&template=content_request.yml)
-  - I have some questions about the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=question&template=question.yml)
-  - Hey, your wiki site is so ugly, I have some thoughts about the style: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonomyous&labels=style&template=style_report.yml)
+  - I found some wrong information in the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=bug,wiki&template=bug_report.yml)
+  - I am not satisfied with the current structure of the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,structure&template=feature_request_structure.yml)
+  - I have some ideas about new content: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=enhancement,wiki,content&template=content_request.yml)
+  - I have some questions about the wiki: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=question,wiki&template=question.yml)
+  - Hey, your wiki site is so ugly, I have some thoughts about the style: [Click Here](https://github.com/li-dao/wiki/issues/new?assignees=really-need-anonymous&labels=style,wiki&template=style_report.yml)
 
 ## How to Contribute
 
