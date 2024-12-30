@@ -29,7 +29,7 @@ import TabItem from '@theme/TabItem';
 1. **有经验的贡献者（熟悉 GitHub 和 Markdown）**
    如果你已经熟悉 GitHub 的工作流程和 Markdown：
    - **推荐操作**：直接向 [仓库](https://github.com/li-dao/wiki/pulls) 提交拉取请求（Pull Request）。
-   - **重要提示**：在贡献之前，请务必阅读[重要的安全注意事项](#%EF%B8%8F-重要的安全注意事项)。
+   - **重要提示**：在贡献之前，请务必阅读[重要的安全注意事项](#%EF%B8%8F-中国大陆贡献者的重要安全注意事项)。
 
 2. **新手贡献者（不熟悉 GitHub 或 Markdown）**
    如果你是 GitHub 或 Markdown 的新手：
@@ -73,14 +73,14 @@ import TabItem from '@theme/TabItem';
 #### **生成 SSH 密钥**
 
 1. 打开 PowerShell 并运行以下命令：
-   ```bash
+   ```bash showLineNumbers
    ssh-keygen -t ed25519 -C "anonymous@proton.me"
    ```
    - 将密钥保存到安全位置（例如 `C:\Users\YourUsername\.ssh\id_ed25519_anonymous`）。
 
 2. **更新 SSH 配置文件**
    - 转到 `.ssh` 文件夹（例如 `C:\Users\YourUsername\.ssh`），创建或编辑 `config` 文件，并添加以下内容：
-     ```plaintext
+     ```plaintext showLineNumbers
      Host github.com-anonymous
          HostName github.com
          User git
@@ -91,7 +91,7 @@ import TabItem from '@theme/TabItem';
 
 3. **将 SSH 密钥添加到 GitHub**
    - 将公钥复制到剪贴板：
-     ```bash
+     ```bash showLineNumbers
      cat ~/.ssh/id_ed25519_anonymous.pub
      ```
    - 打开 [GitHub SSH 设置](https://github.com/settings/keys) 并粘贴密钥。
@@ -103,14 +103,14 @@ import TabItem from '@theme/TabItem';
 #### **生成 SSH 密钥**
 
 1. 打开终端并运行：
-   ```bash
+   ```bash showLineNumbers
    ssh-keygen -t ed25519 -C "anonymous@proton.me"
    ```
    - 将密钥保存为 `~/.ssh/id_ed25519_anonymous`。
 
 2. **更新 SSH 配置文件**
    - 编辑或创建 `~/.ssh/config` 文件，并添加以下内容：
-     ```plaintext
+     ```plaintext showLineNumbers
      Host github.com-anonymous
          HostName github.com
          User git
@@ -121,7 +121,7 @@ import TabItem from '@theme/TabItem';
 
 3. **将 SSH 密钥添加到 GitHub**
    - 将公钥复制到剪贴板：
-     ```bash
+     ```bash showLineNumbers
      cat ~/.ssh/id_ed25519_anonymous.pub | pbcopy
      ```
    - 打开 [GitHub SSH 设置](https://github.com/settings/keys) 并粘贴密钥。
@@ -135,20 +135,20 @@ import TabItem from '@theme/TabItem';
 
 1. **匿名克隆仓库**
    - 使用你创建的 SSH 别名：
-     ```bash
+     ```bash showLineNumbers
      git clone git@github.com-anonymous:{your-github-username}/{your-forked-repo-name}.git
      ```
 
 2. **设置匿名的 Git 提交信息**
    - 配置 Git 使用匿名身份：
-     ```bash
+     ```bash showLineNumbers
      git config user.name "anonymous-contributor"
      git config user.email "anonymous@proton.me"
      ```
 
 3. **验证配置**
    - 检查你的设置：
-     ```bash
+     ```bash showLineNumbers
      git config --get user.name
      git config --get user.email
      ```
@@ -178,7 +178,7 @@ import TabItem from '@theme/TabItem';
 1. **Git**
    - 下载并安装 [Git](https://git-scm.com/)。
    - 验证安装是否成功：
-     ```bash
+     ```bash showLineNumbers
      git --version
      ```
 
@@ -187,11 +187,11 @@ import TabItem from '@theme/TabItem';
 
 3. **Bun（可选）**
    - 如果计划本地构建和测试站点，安装 [Bun](https://bun.sh/)：
-     ```bash
+     ```bash showLineNumbers
      curl -fsSL https://bun.sh/install | bash
      ```
    - 验证安装：
-     ```bash
+     ```bash showLineNumbers
      bun --version
      ```
 
@@ -203,7 +203,7 @@ import TabItem from '@theme/TabItem';
 
 1. **注册或登录**
    - 如果你还没有 GitHub 账户，请访问 [github.com](https://github.com/) 注册。
-   - 如果你在中国大陆，请使用匿名的电子邮件地址（详见[重要的安全注意事项](#⚠️-中国大陆贡献者的重要安全注意事项)）。
+   - 如果你在中国大陆，请使用匿名的电子邮件地址（详见[重要的安全注意事项](#%EF%B8%8F-中国大陆贡献者的重要安全注意事项)）。
 
 2. **启用双因素认证（2FA，推荐）**
    - 在你的 [GitHub 账户安全设置](https://github.com/settings/security) 中启用 2FA，以提升账户安全性。
@@ -220,14 +220,14 @@ SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步
 #### **生成 SSH 密钥**
 
 1. 打开 PowerShell 并运行以下命令：
-   ```bash
+   ```bash showLineNumbers
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
    - 将 `your_email@example.com` 替换为你 GitHub 账户关联的电子邮件。
    - 默认情况下，密钥将保存到 `C:\Users\<YourUsername>\.ssh\id_ed25519`。
 
 2. 确保密钥已生成：
-   ```bash
+   ```bash showLineNumbers
    dir $HOME\.ssh
    ```
    - 你应该看到 `id_ed25519`（私钥）和 `id_ed25519.pub`（公钥）。
@@ -235,18 +235,18 @@ SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步
 #### **将 SSH 密钥添加到 SSH 代理**
 
 1. 启动 SSH 代理：
-   ```bash
+   ```bash showLineNumbers
    Start-Service ssh-agent
    ```
 2. 添加私钥到代理：
-   ```bash
+   ```bash showLineNumbers
    ssh-add $HOME\.ssh\id_ed25519
    ```
 
 #### **将 SSH 密钥添加到 GitHub**
 
 1. 复制公钥到剪贴板：
-   ```bash
+   ```bash showLineNumbers
    Get-Content $HOME\.ssh\id_ed25519.pub | clip
    ```
 2. 打开 [GitHub SSH 设置](https://github.com/settings/keys)。
@@ -256,7 +256,7 @@ SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步
 #### **测试 SSH 连接**
 
 1. 验证 SSH 设置：
-   ```bash
+   ```bash showLineNumbers
    ssh -T git@github.com
    ```
    - 你应该看到类似以下的信息：
@@ -271,14 +271,14 @@ SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步
 #### **生成 SSH 密钥**
 
 1. 打开终端并运行：
-   ```bash
+   ```bash showLineNumbers
    ssh-keygen -t ed25519 -C "your_email@example.com"
    ```
    - 将 `your_email@example.com` 替换为你 GitHub 账户关联的电子邮件。
    - 默认情况下，密钥将保存为 `~/.ssh/id_ed25519`。
 
 2. 确保密钥已生成：
-   ```bash
+   ```bash showLineNumbers
    ls ~/.ssh
    ```
    - 你应该看到 `id_ed25519`（私钥）和 `id_ed25519.pub`（公钥）。
@@ -286,18 +286,18 @@ SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步
 #### **将 SSH 密钥添加到 SSH 代理**
 
 1. 启动 SSH 代理：
-   ```bash
+   ```bash showLineNumbers
    eval "$(ssh-agent -s)"
    ```
 2. 添加私钥到代理：
-   ```bash
+   ```bash showLineNumbers
    ssh-add ~/.ssh/id_ed25519
    ```
 
 #### **将 SSH 密钥添加到 GitHub**
 
 1. 复制公钥到剪贴板：
-   ```bash
+   ```bash showLineNumbers
    cat ~/.ssh/id_ed25519.pub | pbcopy
    ```
 2. 打开 [GitHub SSH 设置](https://github.com/settings/keys)。
@@ -307,7 +307,7 @@ SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步
 #### **测试 SSH 连接**
 
 1. 验证 SSH 设置：
-   ```bash
+   ```bash showLineNumbers
    ssh -T git@github.com
    ```
    - 你应该看到类似以下的信息：
@@ -328,14 +328,14 @@ SSH 密钥提供了一种安全、便捷的方式连接 GitHub。按照以下步
 
 2. **克隆你的 Fork**
    - 使用 Git 将你的 Fork 克隆到本地：
-     ```bash
+     ```bash showLineNumbers
      git clone git@github.com:<your-username>/wiki.git
      ```
    - 将 `<your-username>` 替换为你的 GitHub 用户名。
 
 3. **进入项目目录**
    - 进入克隆的项目目录：
-     ```bash
+     ```bash showLineNumbers
      cd wiki
      ```
 
@@ -372,7 +372,7 @@ Markdown 是一种轻量级的标记语言，用于高效地格式化文档。
 
 3. **本地预览更改（可选）**
    - 如果你已经安装了 **Bun** 或 **Node.js**，可以运行本地开发服务器：
-     ```bash
+     ```bash showLineNumbers
      bun run start
      ```
      - 服务器将在 `http://localhost:3000` 启动，你可以在浏览器中查看你的更改。
@@ -391,7 +391,7 @@ Markdown 是一种轻量级的标记语言，用于高效地格式化文档。
 2. **在侧边栏注册页面**
    - 打开根目录下的 `src/sidebars.ts` 文件。
    - 在适当的部分下添加新页面的条目，例如：
-     ```javascript
+     ```javascript showLineNumbers
      {
        type: 'doc',
        id: 'your-new-page-id',
@@ -401,7 +401,7 @@ Markdown 是一种轻量级的标记语言，用于高效地格式化文档。
 
 3. **本地预览新页面**
    - 运行开发服务器，验证新页面是否正确呈现：
-     ```bash
+     ```bash showLineNumbers
      bun run start
      ```
 
@@ -422,7 +422,7 @@ Markdown 是一种轻量级的标记语言，用于高效地格式化文档。
 
 4. **测试多语言功能**
    - 运行以下命令构建站点，并查看翻译效果：
-     ```bash
+     ```bash showLineNumbers
      bun run build
      bun run serve
      ```
@@ -444,19 +444,19 @@ Markdown 是一种轻量级的标记语言，用于高效地格式化文档。
 
 1. **暂存更改**
    - 将你修改的文件添加到暂存区：
-     ```bash
+     ```bash showLineNumbers
      git add .
      ```
 
 2. **提交更改**
    - 使用描述性提交消息保存你的更改：
-     ```bash
+     ```bash showLineNumbers
      git commit -m "添加贡献指南的新页面"
      ```
 
 3. **推送更改**
    - 将你的更改推送到你 Fork 的仓库：
-     ```bash
+     ```bash showLineNumbers
      git push -u origin main
      ```
 
