@@ -11,7 +11,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/li-dao/wiki)](https://github.com/li-dao/wiki/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/li-dao/wiki)](https://github.com/li-dao/wiki/pulls)
 [![GitHub Discussions](https://img.shields.io/github/discussions/li-dao/wiki)](https://github.com/li-dao/wiki/discussions)
-[![License](https://img.shields.io/github/license/li-dao/wiki)](https://github.com/li-dao/wiki/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-CC--BY--NC--SA_4.0-blue)](https://github.com/li-dao/wiki/blob/main/LICENSE)
 [![Stars](https://img.shields.io/github/stars/li-dao/wiki)](https://github.com/li-dao/wiki)
 [![Follow on X](https://img.shields.io/twitter/follow/Li_memecoin)](https://x.com/Li_memecoin)
 [![Latest Release](https://img.shields.io/github/v/release/li-dao/wiki)](https://github.com/li-dao/wiki/releases)
